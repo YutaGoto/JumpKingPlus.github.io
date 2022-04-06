@@ -34,7 +34,7 @@ So I started doing some stuff for Jump King; I was not that skilled on programmi
 
 The initial idea was to get what people wanted to be inside Jump King all along; without going through the hassle of coding or using external programs. Of course the first people interested were speedrunners so when I saw **Laayuman** (popular Jump King/variety streamer) streaming the first pre-release version of my mod I personally thought that was the peak of interest.
 
-After the release, many people started asking for custom maps support including some people that you might know: *Lord of Cheeses* and *IntroCar*, in the following months I ended up with a extremely long changelog ([v1.2.0](https://phoenixx19.github.io/JumpKingPlus/publicv120/)) which included support for levels.
+After the release, many people started asking for custom maps support including some people that you might know: *Lord of Cheeses* and *IntroCar*, in the following months I ended up with a extremely long changelog ([v1.2.0]({{ site.baseurl }}/publicv120/)) which included support for levels.
 
 At first the tool, was kind of unstable; so in the following updates I tried really hard to make the job for map makers as easy as possible; I set up an entire section on the site for custom levels with the <u>longest documentation I've ever written</u>, added the Build Helper (which lets you see some in-depth information about the player), added new custom blocks, fixed many bugs and made the quick load thing *(which was kind of recent)*.
 

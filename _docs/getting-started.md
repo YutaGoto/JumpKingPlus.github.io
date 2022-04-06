@@ -21,7 +21,7 @@ Let's get started on how to build a custom level, reskin or collection for Jump 
 ### Installation procedure
 
 0. Make sure you have the [**latest version of JumpKingPlus**](https://github.com/Phoenixx19/JumpKingPlus/releases/latest) installed.
-1. Download the [**sample level**](https://phoenixx19.github.io/JumpKingPlus/workshop/1/) from the workshop.
+1. Download the [**sample level**]({{ site.baseurl }}/workshop/1/) from the workshop.
 2. Drag the `mods` folder from the zip file to `Jump King/Content` folder. If you already have a `mods` folder existing, proceed to rename or delete the folder.
 3. You now have a custom map ready to work on!
 
@@ -33,7 +33,7 @@ After installing and downloading all the files and tools needed; you can start w
 
 ### Testing
 
-Testing is the most important phase of your level that should take you a lot of time, a good level has every single fall calculated, nothing is left to be random. Check out some more on [**tips page**](https://phoenixx19.github.io/JumpKingPlus/workshop/publish/).
+Testing is the most important phase of your level that should take you a lot of time, a good level has every single fall calculated, nothing is left to be random. Check out some more on [**tips page**]({{ site.baseurl }}/workshop/publish/).
 
 To test your sample level **for the first time** you just need to:
 1. Boot up Jump King.

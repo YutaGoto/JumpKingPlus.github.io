@@ -12,7 +12,7 @@ is a PNG image with alpha channel (or **Texture2D**) that is used to determine t
 
 The hitbox file has the size of **780x585 pixels**, every screen is ordered by column starting from top to bottom which means <u>every screen has 60x45 pixels</u>. 
 
-![Hitbox Example](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/workshop/files/level.png)
+![Hitbox Example](https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/workshop/files/level.png)
 
 
 ## Block color table

@@ -11,9 +11,9 @@ nav_order: 1
 is a file that JumpKingPlus reads to know the basic information about the custom level.
 {: .fs-6 .fw-300 }
 
-In this file, you will set up the following basic information of your level using the [blank `mod.xml`](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/workshop/files/mod.xml).
+In this file, you will set up the following basic information of your level using the [blank `mod.xml`](https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/workshop/files/mod.xml).
 
-<!-- <a class="button transparent small" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/workshop/files/mod.xml">
+<!-- <a class="button transparent small" href="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/workshop/files/mod.xml">
         <ion-icon name="code"></ion-icon>
         Blank mod.xml
     </a> -->

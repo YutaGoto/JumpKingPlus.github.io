@@ -8,8 +8,8 @@ base: [
 	"Crown"
 ]
 images: [
-    "https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/workshop/collections/2-banner.png",
-    "https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/workshop/collections/2-hover.gif"
+    "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/workshop/collections/2-banner.png",
+    "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/workshop/collections/2-hover.gif"
 ]
 dlink: "https://github.com/Phoenixx19/JumpKingPlus/raw/www/reskins/collections/TwinkKing.zip"
 ---

@@ -14,7 +14,7 @@ hidden: false
 <!-- more -->
 
 <a href="https://github.com/Phoenixx19/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44">
-    <img class="thumbnail" src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/blog1-0.png" alt="1st anniversary" title="1st anniversary" />
+    <img class="thumbnail" src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/blog1-0.png" alt="1st anniversary" title="1st anniversary" />
 </a>
 
 <br>
@@ -30,7 +30,7 @@ From homebrewing the family Nintendo Wii to jailbreaking my two iPhones, I was a
 
 So I started doing some stuff for Jump King; I was not that skilled on programming, but I had a lot of determination (and free time). I really need to thank **DevilSquirrel** for his patience and making me learn how to use dnSpy and **Erkstock** for answering my dumb questions about the game; if it wasn't for them, this probably never came to life.
 
-![Early Access](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/Banner.png)
+![Early Access](https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/Banner.png)
 
 The initial idea was to get what people wanted to be inside Jump King all along; without going through the hassle of coding or using external programs. Of course the first people interested were speedrunners so when I saw **Laayuman** (popular Jump King/variety streamer) streaming the first pre-release version of my mod I personally thought that was the peak of interest.
 
@@ -44,7 +44,7 @@ Don't get me wrong, the site's fine, I personally believe a video works better t
 
 On the Babe of Ascension's release, I was overwhelmed by the amount of streamers and people that decided to give it a try, on one hand I was really really happy that IntroCar's map was getting recognized (as deserved) on the other I was exhausted from helping people to get that poorly made installer to work.
 
-![Stats](https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/blog1-1.png)
+![Stats](https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/blog1-1.png)
 
 > Screenshot of GitHub stats on August 19th, 2021
 

@@ -5,7 +5,7 @@
 
     <meta name="author" content="{{ site.title }}" />
 
-    <link type="application/json+oembed" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/oembed.json">
+    <link type="application/json+oembed" href="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/oembed.json">
     
 
     {% if page.excerpt %}
@@ -23,14 +23,14 @@
 
     {% if page.type == 'workshop' or page.path contains "workshop" or page.path contains "docs" %}
         <meta name="theme-color" content="#2f9e44">
-        <meta property="og:image" content="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/jkcustomapslogo.png">
+        <meta property="og:image" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png">
     {% elsif page.layout == "level" %}
         <meta name="theme-color" content="#2f9e44">
         <meta property="og:image" content="{{ page.images[0] }}">
         <meta name="twitter:card" content="summary_large_image">
     {% else %}
         <meta name="theme-color" content="#ff0000">
-        <meta property="og:image" content="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/jkpluslogo.png">
+        <meta property="og:image" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkpluslogo.png">
     {% endif %}
 
     {% if page.title %}

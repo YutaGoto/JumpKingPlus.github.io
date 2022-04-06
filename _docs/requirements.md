@@ -18,7 +18,7 @@ to build a level or a reskin/collection.
 
 
 ## Requirements for building custom levels
-> Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.2.0) or above__.
+> Custom levels are available only using __JumpKingPlus on [v1.2.0](https://github.com/JumpKingPlus/JumpKingPlus/releases/tag/v1.2.0) or above__.
 
 All you need is:
 - The [__sample custom level__]({{ site.baseurl }}/workshop/1) by Phoenixx19
@@ -30,7 +30,7 @@ All you need is:
 <br>
 
 ## Requirements for skins and collections
-> Custom levels are available only using __JumpKingPlus on [v1.6.0](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v1.6.0) or above__.
+> Custom levels are available only using __JumpKingPlus on [v1.6.0](https://github.com/JumpKingPlus/JumpKingPlus/releases/tag/v1.6.0) or above__.
 
 All you need is:
 - A simple **pixel art editor** (Aseprite, GraphicsGale, etc.)

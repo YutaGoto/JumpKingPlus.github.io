@@ -13,7 +13,7 @@ hidden: false
 ## Changelog
 
 Second beta version for testers only during testing period.<br>
-Download available [**here**](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v0.14.0).
+Download available [**here**](https://github.com/JumpKingPlus/JumpKingPlus/releases/tag/v0.14.0).
 <!-- more -->
 
 ### Features added:

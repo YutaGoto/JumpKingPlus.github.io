@@ -20,7 +20,7 @@ images: [
     "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/workshop/collections/5-banner.png",
     "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/workshop/collections/5-hover.png"
 ]
-dlink: "https://github.com/Phoenixx19/JumpKingPlus/raw/www/reskins/collections/Shovel%20Knight.zip"
+dlink: "https://github.com/JumpKingPlus/JumpKingPlus.github.io/raw/www/reskins/collections/Shovel%20Knight.zip"
 ---
 
 For Shovelry!

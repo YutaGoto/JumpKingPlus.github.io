@@ -35,7 +35,7 @@ Welcome to the documentation for custom levels, reskins and collections on Jump 
 #### Contribution
 
 If you would like to contribute:
-- Create a [pull request](https://github.com/Phoenixx19/JumpKingPlus/pulls) on the `www` branch and modify the content inside the `_docs` folder.
+- Create a [pull request](https://github.com/JumpKingPlus/JumpKingPlus/pulls) on the `www` branch and modify the content inside the `_docs` folder.
 - Or [join the Discord server](https://discord.gg/dUk9FPDNVq) and let us know what you'd like to edit.
 
 If the contribution takes place, your name will be added onto the list of contributors.

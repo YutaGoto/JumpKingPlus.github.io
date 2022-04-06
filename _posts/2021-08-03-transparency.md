@@ -41,7 +41,7 @@ Yes, it is safe to install.
 The modded version of the executable file (JumpKing.exe), the dynamic library link (JumpKingPlus.dll) and the JumpKingPlusInstaller (the executable file that is used to install JumpKingPlus) are all **open source**.
 
 - The __modded JumpKing.exe__ file can be accessed using a debugger. My personal choice is [**dnSpy**](https://github.com/dnSpy/dnSpy/releases/latest) for its relative simplicity in coding and reading code, but you can use anything that decompiles C#.
-- The __JumpKingPlus.dll__ source code, which is used together with the modded JumpKing executable, can be found inside the main [__Github repository__](https://github.com/Phoenixx19/JumpKingPlus/tree/master/JumpKingPlus/JumpKingPlus).
+- The __JumpKingPlus.dll__ source code, which is used together with the modded JumpKing executable, can be found inside the main [__Github repository__](https://github.com/JumpKingPlus/JumpKingPlus/tree/master/JumpKingPlus/JumpKingPlus).
 - The __JumpKingInstaller__ has been made recently  open source, the code used in the [__Github repository__](https://github.com/Phoenixx19/JumpKingPlusInstaller) is still used nowadays on the installer.
 
 The installer was made public and open source because of recently; the goal of making it public recently was to proof that the installer installs only the strict necessary. Made with [WixSharp installer library](https://wixtoolset.org/).
@@ -66,7 +66,7 @@ There are multiple occasions where official Nexile developers endorsed it or sho
         </div>
         <div class="swiper-slide">
             <a href="https://discord.com/channels/547420017738907657/547442326927179778/868872288139878461" target="_blank">
-                <img src="https://github.com/Phoenixx19/JumpKingPlus/raw/www/images/announcement.png" alt="Thomas' blessing">
+                <img src="https://github.com/JumpKingPlus/JumpKingPlus.github.io/raw/www/images/announcement.png" alt="Thomas' blessing">
             </a>
         </div>
     </div>

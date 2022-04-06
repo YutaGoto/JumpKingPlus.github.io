@@ -13,7 +13,7 @@ hidden: false
 
 <!-- more -->
 
-<a href="https://github.com/Phoenixx19/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44">
+<a href="https://github.com/JumpKingPlus/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44">
     <img class="thumbnail" src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/blog1-0.png" alt="1st anniversary" title="1st anniversary" />
 </a>
 
@@ -21,7 +21,7 @@ hidden: false
 
 ### My personal experience
 
-> Phoenixx19 committed on Sep 12, 2020: **[Initial commit](https://github.com/Phoenixx19/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44)** 
+> Phoenixx19 committed on Sep 12, 2020: **[Initial commit](https://github.com/JumpKingPlus/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44)** 
 
 Exactly **twelve months** have passed since I started working on this project. Started as a fun side project to keep me occupied while being at home during the lockdown and ended up being a legitimate side work.
 

@@ -13,7 +13,7 @@ hidden: false
 ## Changelog
 
 First beta version for testers only during testing period.<br>
-Download available [**here**](https://github.com/Phoenixx19/JumpKingPlus/releases/tag/v0.13.0).
+Download available [**here**](https://github.com/JumpKingPlus/JumpKingPlus/releases/tag/v0.13.0).
 <!-- more -->
 
 ### Features added:
@@ -22,7 +22,7 @@ Mods:
 - **JumpKingRPC** v2.2.0
 - Disabling NPC speech
 - **Quick restart** from Pause Menu
-- Easter eggs (check out more [**here**](https://github.com/Phoenixx19/JumpKingPlus/about))
+- Easter eggs (check out more [**here**](https://github.com/JumpKingPlus/JumpKingPlus/about))
 - Cheats, including:
   - **Jump%** (showing the percentage of a jump)
   - No falls (once ticked on the cheats menu, the falls will be null)

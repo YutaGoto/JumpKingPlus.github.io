@@ -10,7 +10,7 @@ nav_order: 2
 details **you need to know** before you creating.
 {: .fs-6 .fw-300 }
 
-JumpKingPlus does **not** take any responsibility of your actions as you agreed downloading JumpKingPlus with a [**MIT License**](https://github.com/Phoenixx19/JumpKingPlus/blob/master/LICENSE).
+JumpKingPlus does **not** take any responsibility of your actions as you agreed downloading JumpKingPlus with a [**MIT License**](https://github.com/JumpKingPlus/JumpKingPlus/blob/master/LICENSE).
 
 ## Table of contents
 {: .no_toc .text-delta }

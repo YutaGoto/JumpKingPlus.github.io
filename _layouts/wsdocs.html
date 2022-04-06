@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include wsnav.html %}
+
+    <style>
+        .rectangle {
+            width:20px;
+            height:20px;
+            border: solid 1px grey;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .rectangle-gradient {
+            width:40px;
+            height:20px;
+            border: solid 1px grey;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        h1 {
+          display: inline-block;
+          font-size: 32px;
+          font-weight: 300;
+        }
+        h2 {
+          display: inline-block;
+          margin: 3rem 0 0.85rem;
+        }
+        h3 {
+          display: inline-block;
+          margin: 2rem 0 0.75rem;
+        }
+        h4 {
+          display: inline-block;
+          margin: 1.66rem 0 .65rem;
+        }
+        hr {
+          margin: 4rem 0;
+        }
+        p {
+          margin: .5rem 0;
+        }
+        div.intro {
+          margin: 2rem 0;
+        }
+        .fw-300 {
+          font-weight: 300 !important;
+        }
+        .fs-6 {
+          font-size: 24px !important;
+          margin-bottom: 1.5rem;
+        }
+        .fs-9 {
+          font-size: 36px !important;
+          line-height: 1.25;
+        }
+        .title ion-icon {
+          vertical-align: initial;
+          font-size: inherit;
+        }
+        .title a {
+          margin: 0 .25rem;
+        }
+        .do-i-need-it {
+          display: inline-block;
+          margin-left: 1rem;
+        }
+        .side-bar h3 {
+          display: block;
+        }
+    </style>
+
+    <div id="main" role="main" class="wrapper-content ext">
+      <div class="relative">
+        <div class="side-bar">
+          <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+            <h3>Contents</h3>
+            {% include navdocs.html pages=site.docs %}
+          </nav>
+        </div>
+      </div>
+      
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+
+  <div class="wrapper-footer-mobile" style="display: block;">
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+
+
+</html>

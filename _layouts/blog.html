@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<style>
+  .container {
+      max-width: 850px;
+      padding-top: 75px;
+  }
+</style>
+
+    {% capture time_words %} 
+  	  {{page.content | number_of_words | divided_by: 5}} 
+    {% endcapture %}
+
+<article class="blog">
+  <a href="{{ site.baseurl }}/tags/?tag=blog" class="button outline"><ion-icon name="arrow-back"></ion-icon>Back to the blog</a>
+  <div class="meta">
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+    <span class="date">
+      <span>{{ page.date | date_to_long_string: "ordinal" }} • {{time_words | divided_by: 60}} minutes read</span>
+      <span style="float: right;">written by <strong>{{ page.Author }}</strong></span>
+    </span>
+  </div>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+</article>
+
+<img src="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/splat.png" alt="splat" style="margin: 4em auto -2em auto;">
+
+  <!--
+<div class="pagination">
+  {% if page.previous.url %}
+    <span class="prev" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+        ← Previous
+      </a>
+    </span>
+  {% endif %}
+  {% if page.next.url %}
+    <span class="next" >
+      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+        Next →
+      </a>
+    </span>
+  {% endif %}
+</div>
+-->

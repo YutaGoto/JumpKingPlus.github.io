@@ -1,0 +1,31 @@
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }} – {{ site.description }}</title>
+
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  {% if page.type == 'workshop' or page.path contains "workshop" or page.path contains "docs" %}
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Phoenixx19/JumpKingPlus/www/images/jkcustomapslogo.png">
+  {% else %}
+    <link rel="shortcut icon" href="{{ site.favicon }}">
+  {% endif %}
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/56f7faf3f4.js"></script> -->
+  <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script> -->
+
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+</head>

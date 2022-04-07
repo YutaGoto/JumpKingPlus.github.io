@@ -89,7 +89,7 @@
                 {{ level.excerpt | truncate: 300 }}
               </p>
               <div class="details" style="padding: 0;">
-                {% if level.levelId == '3' %}
+                <!-- {% if level.levelId == '3' %}
                 <a class="tag-link">
                   <span class="button-rate-level{{level.levelId}} rounded-full level-tag">Vote me :)</span>
                 </a>
@@ -138,7 +138,7 @@
                   });
                   modalTinyNoFooterlvl{{level.levelId}}.setContent(document.getElementById("rate-difficulty-{{level.levelId}}").innerHTML);
                 </script>
-                {% endif %}
+                {% endif %} -->
                 {% for tag in level.tags %}
                 <a class="tag-link" href="{{ site.url }}{{ site.baseurl }}/workshop/tags/?tag={{ tag }}">
                   <span class="rounded-full level-tag">

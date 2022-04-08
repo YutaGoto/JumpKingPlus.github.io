@@ -36,7 +36,9 @@ search_exclude: true
     }
 </style>
 
-<img id="oof" src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/splat.png"  onclick="ChangeKing()" alt="Splat">
+<a href="javascript:void(0)">
+    <img id="oof" src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/splat.png"  onclick="ChangeKing()" alt="Splat">
+</a>
 
 <script>
     var imgArr = [
@@ -49,12 +51,23 @@ search_exclude: true
         "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/lookup.png",
         "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/swag.png",
         "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/walk.png",
-        "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/cursed.png"
+        "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/cursed.png",
+        "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/asion.png"
     ];
+    
+    let imgOrder = 0;
+    let num = 0;
 
     function ChangeKing() {
-        let num = Math.floor(Math.random() * (imgArr.length));
-        document.getElementById('oof').src = imgArr[num];
+        this.num = Math.floor(Math.random() * (imgArr.length));
+        document.getElementById('oof').src = imgArr[this.num];
+        document.getElementById('oof').parentElement.target = '';
+        document.getElementById('oof').parentElement.href = 'javascript:void(0)';
+        if (this.imgOrder === (imgArr.length-1)) {
+            document.getElementById('oof').parentElement.target = '_blank';
+            document.getElementById('oof').parentElement.href = "https://drive.google.com/file/d/15HsHN4Fkl-c1QVj230jj8UeXuOb4IhT3/view?usp=sharing";
+        }
+        this.imgOrder = this.num;
     }
 </script>
 

@@ -9,8 +9,8 @@ This repo has nothing to do with the actual JumpKingPlus' code. It's just the we
 
 #### To-do
 - [x] Fix dead links of images and files
-- [ ] Move JumpKingPlus repo to organization
-- [ ] Implement CNAME in original repo
+- [x] Move JumpKingPlus repo to organization
+- [x] Implement CNAME in original repo
 
 <br>
 ~ Phoenixx19, 2020-2022

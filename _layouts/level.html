@@ -26,6 +26,26 @@ layout: default
         xhr.open("GET", "https://api.countapi.xyz/hit/JumpKingPlus/level{{ page.levelId }}");
         xhr.send();
     }
+    function checkAchievement(input) {
+        localStorage.setItem(input.id, input.checked);
+        if (localStorage.getItem(input.id) === "false") {
+            localStorage.removeItem(input.id);
+        }
+        if (input.checked) {
+            document.querySelector(`label[for="${input.id}"]`).style = "text-decoration:line-through;opacity:0.66;";
+            return;
+        }
+        document.querySelector(`label[for="${input.id}"]`).style = "";
+
+    }
+    function getAchievement(input) {
+        input.type = "checkbox";
+        input.removeAttribute("src");
+        if (localStorage.getItem(input.id) === "true") {
+            input.checked = localStorage.getItem(input.id);
+            document.querySelector(`label[for="${input.id}"]`).style = "text-decoration:line-through;opacity:0.66;";
+        }
+    }
 </script>
 
 <article class="page level header">
@@ -151,8 +171,16 @@ layout: default
                     <div class="achievements">
                         {% for achievement in page.achievements %}
                         <div class="achievement">
-                            <input type="checkbox" id="{{page.levelId}}-achievement{{forloop.index}}" name="{{page.levelId}}">
-                            <label for="{{forloop.index}}">
+                            <!-- workaround for html missing onload on inputs[*:not(=image)]-->
+                            <input
+                                type="image"
+                                src=""
+                                id="{{page.levelId}}-achievement{{forloop.index}}"
+                                name="{{page.levelId}}"
+                                onerror="getAchievement(this)"
+                                onchange="checkAchievement(this)"
+                            >
+                            <label for="{{page.levelId}}-achievement{{forloop.index}}">
                                 <strong>{{ achievement.title }}: </strong>
                                 <span>{{ achievement.description }}</span>
                             </label>

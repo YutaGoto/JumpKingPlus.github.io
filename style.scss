@@ -486,6 +486,10 @@ div.intro {
   position: relative;
 }
 
+.levels .wip, .detail-card {
+  background: linear-gradient(23deg, #19191938 10%, rgba(47, 158, 68, 0.08) 90%);
+}
+
 .levels {
   margin-bottom: 30px;
   border-top: 1px solid #f1f3f5;
@@ -495,8 +499,6 @@ div.intro {
   }
 
   .wip {
-    background: linear-gradient(23deg, #19191938 10%, rgba(47, 158, 68, 0.08) 90%);
-
     .underlined {
       color: $link-color;
     }
@@ -2200,10 +2202,63 @@ ul.nav-list {
   }
 }
 
+article.page.level details {
+  &:not([open]) {
+    cursor: pointer;
+    .close {
+      display: initial;
+    }
+  }
+  &[open] {
+    .open {
+      display: initial;
+    }
+    summary {
+      padding-bottom: 1rem;
+    }
+  }
+  margin-top: 2rem;
+  border: 1px solid $divider-color;
+  border-radius: 10px;
+  padding: 1rem;
+
+  >summary {
+    &::-webkit-details-marker {
+      display: none;
+    }
+    padding: 0 .5rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+      display: inline-block;
+    }
+  
+    ion-icon {
+      font-size: 24px;
+      display: none;
+    }
+  }
+
+  div.achievements {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    div.achievement {
+      padding: .25rem 0;
+    }
+  }
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   ::-moz-selection { background: rgb(33, 33, 33); }
   ::selection { background: rgb(33, 33, 33); }
-  h1, h2, h3, h4, h5, h6, p, .site-name, .title-level { color: white; }
+  h1, h2, h3, h4, h5, h6, p, .site-name, .title-level, details, summary { color: white; }
   article.page.level { background: linear-gradient(0deg, rgb(25, 25, 25) calc(100% - 125px), rgba(255, 255, 255, 0) 115%); }
   .entry hr, hr { border-color: rgb(50, 50, 50); }
   .details tr > td:first-child { color: lightgrey; }
@@ -2222,7 +2277,7 @@ ul.nav-list {
   footer p, .site-description { color: lightgrey; }
   body, #main { background-color: rgb(25, 25, 25); }
   div.intro { background: linear-gradient(23deg, rgb(25, 25, 25) 10%, rgba($link-color, 0.5) 90%); border: 1px solid rgb(45, 45, 45); }
-  div.card, .publish div.div-button { border: 1px solid rgb(45, 45, 45); }
+  div.card, .publish div.div-button, article.page.level details { border: 1px solid rgb(45, 45, 45); }
   .feature, .collections, .reskins, .levels { border-top: 1px solid rgb(45, 45, 45); }
   .levels .wip { p { color: white; } }
   code.highlighter-rouge { background-color: rgb(50, 50, 50)!important; color: #8e97c2!important; }

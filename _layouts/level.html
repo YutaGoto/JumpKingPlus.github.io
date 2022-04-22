@@ -137,6 +137,31 @@ layout: default
                 </script>
                 {% endif %}
 
+                {% if page.achievements %}
+                <details class="detail-card">
+                    <summary>
+                        <h2>Achievements
+                            <span class="rounded-full level-tag" style="display: inline;vertical-align: bottom;">
+                                {{ page.achievements | size }}
+                            </span>
+                        </h2>
+                        <ion-icon class="close" name="caret-back"></ion-icon>
+                        <ion-icon class="open" name="caret-down"></ion-icon>
+                    </summary>
+                    <div class="achievements">
+                        {% for achievement in page.achievements %}
+                        <div class="achievement">
+                            <input type="checkbox" id="{{page.levelId}}-achievement{{forloop.index}}" name="{{page.levelId}}">
+                            <label for="{{forloop.index}}">
+                                <strong>{{ achievement.title }}: </strong>
+                                <span>{{ achievement.description }}</span>
+                            </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </details>
+                {% endif %}
+
                 <div class="details" style="padding: 0;">
                     <h2>Details</h2>
                     <table>

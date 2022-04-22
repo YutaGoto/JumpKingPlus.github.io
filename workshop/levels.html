@@ -89,56 +89,6 @@
                 {{ level.excerpt | truncate: 300 }}
               </p>
               <div class="details" style="padding: 0;">
-                <!-- {% if level.levelId == '3' %}
-                <a class="tag-link">
-                  <span class="button-rate-level{{level.levelId}} rounded-full level-tag">Vote me :)</span>
-                </a>
-                <div class="tingle-tiny-level{{level.levelId}}"
-                  style="display: none;" id="rate-difficulty-{{level.levelId}}">
-                  <form id="form-rate-difficulty-{{level.levelId}}" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScxyAzJEjZ307dwvTUr-EaqygZeogwXDVry4Y_UVgRAjgNnaw/formResponse">
-                    <h1>{{ level.title }}: Difficulty Survey</h1>
-                    <div>
-                      <label for="{{level.levelId}}-nickname">What name/nickname do you go by?</label>
-                      <input type="text" name="entry.664914745"
-                          id="{{level.levelId}}-nickname"
-                          placeholder="Your name or nickname">
-                    </div>
-                    <div>
-                      <label for="{{level.levelId}}-radios" class="requested">
-                        How would you rate <i>{{ level.title }}</i>'s difficulty on the following scale?
-                      </label>
-                      <div id="{{level.levelId}}-radios">
-                        {% for score in page.scores %}
-                        <label class="radio">
-                          <input type="radio" name="entry.2012540660" value="{{ forloop.index }}" id="{{level.levelId}}-radio{{ forloop.index }}">
-                          {{ score }}
-                        </label>
-                        {% endfor %}
-                      </div>
-                    </div>
-                    <a class="button" href="javascript:{}" onclick="document.getElementById('form-rate-difficulty-{{level.levelId}}').submit(); return false;">Submit</a>
-                    <p class="small" style="float:right;text-align: end;margin-top: 0;margin-bottom: 0;">You might get redirected to <strong>Google Forms</strong><br>after submitting the survey.</p>
-                  </form>
-                </div>
-                <script type="text/javascript">
-                  var modalTinyNoFooterlvl{{level.levelId}} = new tingle.modal({
-                      onClose: function () { },
-                      onOpen: function() {
-                        var close = document.querySelectorAll(".tingle-modal__close")[2];
-                        var modalContent = document.querySelectorAll(".tingle-modal-box__content")[2];
-                        modalContent.appendChild(close);
-                      },
-                      beforeOpen: function () { },
-                      beforeClose: function () { return true; },
-                      cssClass: ['class1']
-                  });
-                  var btn = document.querySelector('.button-rate-level{{level.levelId}}');
-                  btn.addEventListener('click', function () {
-                    modalTinyNoFooterlvl{{level.levelId}}.open();
-                  });
-                  modalTinyNoFooterlvl{{level.levelId}}.setContent(document.getElementById("rate-difficulty-{{level.levelId}}").innerHTML);
-                </script>
-                {% endif %} -->
                 {% for tag in level.tags %}
                 <a class="tag-link" href="{{ site.url }}{{ site.baseurl }}/workshop/tags/?tag={{ tag }}">
                   <span class="rounded-full level-tag">

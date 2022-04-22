@@ -69,24 +69,11 @@ permalink: /workshop/tags/
                   </div>
                 </div>
                 </div>
-              
-
-              <!-- <li>
-                {% if post.link %}
-                  <a href="{{ post.link }}">
-                {% else %}
-                  <a href="{{ site.baseurl }}{{ post.url }}">
-                {% endif %}
-                    {{ post.title }}
-                  </a>
-                  <time>{{ post.date | date: "%Y-%m-%d" }}</time>
-              </li> -->
             {% endif %}
           {% endfor %}
         {% endfor %}
       </div>
     </div>
-    
     {% endfor %}
   </div>
 </div>
@@ -110,3 +97,13 @@ permalink: /workshop/tags/
   }
   
 </script>
+<script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+      <script>
+        let magicGrid = new MagicGrid({
+          container: `#${tag}>.levels`, // Required. Can be a class, id, or an HTMLElement.
+          static: true, // Required for static content.
+          gutter: 40, // Optional. Space between items. Default: 25(px).
+          maxColumns: 2, // Optional. Maximum number of columns. Default: Infinite.
+        });
+        magicGrid.listen();
+      </script>

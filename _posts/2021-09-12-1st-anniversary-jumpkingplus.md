@@ -9,12 +9,13 @@ comments: false
 toc: false
 pinned: true
 hidden: false
+coverImage: https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/blog1-0.png
 ---
 
 <!-- more -->
 
 <a href="https://github.com/JumpKingPlus/JumpKingPlus/commit/64f832918929292cf5f43f931545e332bb005d44">
-    <img class="thumbnail" src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/blog1-0.png" alt="1st anniversary" title="1st anniversary" />
+    <img class="thumbnail" src="{{page.coverImage}}" alt="{{page.title}}" title="{{page.title}}" />
 </a>
 
 <br>

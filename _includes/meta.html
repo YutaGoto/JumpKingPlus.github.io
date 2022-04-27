@@ -41,6 +41,8 @@
         <meta name="description" content="{{ page.excerpt | strip_html }}" />
         <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
         <meta property="twitter:description" content="{{ page.excerpt | strip_html }}" />
+    {% elsif page.layout == "blog" %}
+        
     {% else %}
         <meta name="description" content="{{ site.description }}">
         <meta property="og:description" content="{{ site.description }}" />
@@ -52,6 +54,12 @@
         {% if page.layout == "level" %}
             <meta property="og:image" content="{{ page.images[0] }}">
             <meta property="og:image:secure_url" content="{{ page.images[0] }}">
+        {% elsif page.layout == "blog" %}
+            <meta property="og:image" content="{{ page.coverImage }}">
+            <meta property="og:image:secure_url" content="{{ page.coverImage }}">
+            <meta name="description" content="{{ page.subtitle }}">
+            <meta property="og:description" content="{{ page.subtitle }}" />
+            <meta property="twitter:description" content="{{ page.subtitle }}" />
         {% else %}
             <meta property="og:image" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png">
             <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png">

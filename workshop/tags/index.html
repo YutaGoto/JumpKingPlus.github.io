@@ -12,6 +12,7 @@ permalink: /workshop/tags/
 {% endif %}
 
 <div class="tags">
+  <!-- top menu -->
   <div class="sticky">
     <h1>Workshop tags</h1>
     {% for tag1 in tags %}
@@ -45,8 +46,7 @@ permalink: /workshop/tags/
       <div class="levels">
         {% for post in site.workshop %}
           {% for tag in post.tags %}
-            {% if tag1 == tag %}
-            
+            {% if tag1 == tag and post.hidden == false %}
               <div class="card">
                 <div class="details">
                   <div class="title-level">

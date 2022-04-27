@@ -8,7 +8,7 @@ nav_order: 5
 # Props folder
 {: .no_toc }
 
-contains textures and settings of props used in-game.
+contains textures and settings of props used in-game.<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents

@@ -11,7 +11,7 @@ nav_order: 3
 is a tool for packing images (specifically PNG files) into XNB format, made by [**sullerandras**](https://github.com/sullerandras).
 {: .fs-6 .fw-300 }
 
-Supports batch conversion, but has an executable for ease of use.
+Supports batch conversion, but has an executable for ease of use.<!-- more -->
 
 > Command line usage is:
     <br>`/path/to/png_to_xnb.exe item.png item.xnb` to convert the image into XNB

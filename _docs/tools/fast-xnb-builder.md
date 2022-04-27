@@ -11,7 +11,7 @@ nav_order: 1
 is a quick tool to convert files to .XNB, made by [**NicusorN5**](https://github.com/NicusorN5).
 {: .fs-6 .fw-300 }
 
-This program can be used in command line or with the "*Fast XNB Builder*" executable. By default, FXNBB is showing the interface for ease of use.
+This program can be used in command line or with the "*Fast XNB Builder*" executable. By default, FXNBB is showing the interface for ease of use.<!-- more -->
 
 > Command line arguments are:
     <br>`/ui` - shows an interface to select the folder containing the .X and it's textures.

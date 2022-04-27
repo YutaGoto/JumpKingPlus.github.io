@@ -11,7 +11,7 @@ nav_order: 2
 is a CLI tool for XNB packing/unpacking purpose built for Stardew Valley (but works for Jump King too!), made by [**LeonBlade**](https://github.com/LeonBlade).
 {: .fs-6 .fw-300 }
 
-This program can be used in command line only, but there are two batch files that help you out so you don't have to do anything in command line.
+This program can be used in command line only, but there are two batch files that help you out so you don't have to do anything in command line.<!-- more -->
 
 > Command line usage is:
     <br>`xnbcli pack input-file output-file` - to pack a file

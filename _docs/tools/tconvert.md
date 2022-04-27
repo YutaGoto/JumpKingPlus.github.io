@@ -10,6 +10,7 @@ nav_order: 4
 
 is an Windows Application for managing Terraria content resources, made by [**trigger-segfault**](https://github.com/trigger-segfault).
 {: .fs-6 .fw-300 }
+<!-- more -->
 
 ### What does Terraria have to do with Jump King?
 Being Terraria based on MonoGame, this works for Jump King too.

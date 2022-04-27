@@ -7,7 +7,7 @@ nav_order: 6
 
 # King folder
 
-contains the textures of the player's wearable items in the custom level.
+contains the textures of the player's wearable items in the custom level.<!-- more -->
 {: .fs-6 .fw-300 }
 
 By changing these, you will have a different texture for the item only when the custom mode is triggered.<br>

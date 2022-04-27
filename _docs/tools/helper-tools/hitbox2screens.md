@@ -10,6 +10,7 @@ grand_parent: Tools
 
 is a basic tool built which takes hitboxes and turns them into individual screens that can be used to help with texturing, made by [**Ellie**](https://github.com/Elisiah).
 {: .fs-6 .fw-300 }
+<!-- more -->
 
 ## Usage
 

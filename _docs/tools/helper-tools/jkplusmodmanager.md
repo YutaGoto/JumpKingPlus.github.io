@@ -12,6 +12,7 @@ is a simple WPF application which loads/unloads custom levels, made on v1.2.0 Ju
 {: .fs-6 .fw-300 }
 
 > Not recommended since it breaks easily.
+<!-- more -->
 
 ## Usage
 

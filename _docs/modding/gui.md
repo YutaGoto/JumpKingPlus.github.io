@@ -8,7 +8,7 @@ nav_order: 7
 # Gui folder
 {: .no_toc }
 
-contains the list of locations and the *earthquake* effect settings.
+contains the list of locations and the *earthquake* effect settings.<!-- more -->
 {: .fs-6 .fw-300 }
 
 

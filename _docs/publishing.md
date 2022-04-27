@@ -7,7 +7,7 @@ nav_order: 9999
 # Publishing
 {: .no_toc }
 
-The process to get your user-generated-content on the workshop!
+The process to get your user-generated-content on the workshop!<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents

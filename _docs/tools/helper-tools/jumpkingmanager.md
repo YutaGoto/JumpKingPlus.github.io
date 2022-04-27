@@ -10,6 +10,7 @@ grand_parent: Tools
 
 is a helpful tool to practice Jump King, but lets you load/save positions and teleport to any screen; made by [**DevilSquirrel**](https://github.com/ShootMe).
 {: .fs-6 .fw-300 }
+<!-- more -->
 
 > Warning!
     <br>**Jump King Manager** works on the game's memory and it has a tendency to crash the game if teleporting is overused.

@@ -7,7 +7,7 @@ nav_order: 10
 
 # Particles folder
 
-contains the details about the particles on screen.
+contains the details about the particles on screen.<!-- more -->
 {: .fs-6 .fw-300 }
 
 The particles folder should include two .xml configuration file which are:

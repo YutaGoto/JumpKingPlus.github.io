@@ -8,6 +8,7 @@ nav_order: 10
 # Visual Studio 2019 and Monogame
 Not recommended. This takes a lot in both space on your drive and time. Choose only if this is your last hope.
 {: .fs-6 .fw-300 }
+<!-- more -->
 
 > Warning!
     <br>Converting fonts has not been fully tested and might end up not working.

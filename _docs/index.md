@@ -18,7 +18,7 @@ Welcome to the documentation for custom levels, reskins and collections on Jump 
 - Added compatibility column for the newest JumpKingPlus version (v1.7.1).
 - Added documentation for custom RGBA accents and missing StartingPosition details.
 - Added additional details for disabling the percentage in a specific location.
-- Fixed optional/required tags' position.
+- Fixed optional/required tags' position.<!-- more -->
 
 ### Contributors
 

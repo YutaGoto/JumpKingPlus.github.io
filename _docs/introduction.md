@@ -7,7 +7,7 @@ nav_order: 2
 # Introduction
 {: .no_toc }
 
-details **you need to know** before you creating.
+details **you need to know** before you creating.<!-- more -->
 {: .fs-6 .fw-300 }
 
 JumpKingPlus does **not** take any responsibility of your actions as you agreed downloading JumpKingPlus with a [**MIT License**](https://github.com/JumpKingPlus/JumpKingPlus/blob/master/LICENSE).

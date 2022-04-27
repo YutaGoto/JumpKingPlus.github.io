@@ -10,7 +10,7 @@ nav_order: 4
 
 Before going on detail on every tool's detail in the next pages; it's fair that every person chooses their software based on what they think it's better for their own productivity.
 
-The following table explains every image/sound conversion tool on their pros and cons.
+The following table explains every image/sound conversion tool on their pros and cons.<!-- more -->
 
 |tool|pros|cons|
 |---|---|---|

@@ -7,7 +7,7 @@ nav_order: 5
 # Getting started
 {: .no_toc }
 
-Let's get started on how to build a custom level, reskin or collection for Jump King.
+Let's get started on how to build a custom level, reskin or collection for Jump King.<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents

@@ -7,7 +7,7 @@ nav_order: 3
 # General requirements
 {: .no_toc }
 
-to build a level or a reskin/collection.
+to build a level or a reskin/collection.<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents

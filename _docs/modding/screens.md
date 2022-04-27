@@ -8,7 +8,7 @@ nav_order: 4
 # Screens folder
 {: .no_toc }
 
-contains textures such as background, foreground, midground, scrolling images and masks.
+contains textures such as background, foreground, midground, scrolling images and masks.<!-- more -->
 {: .fs-6 .fw-300 }
 
 All of the layers of a screen can be merged to make a result like this (*without counting the hidden wall because that's a type of prop*):

@@ -8,7 +8,7 @@ nav_order: 9
 # Audio folder
 {: .no_toc }
 
-contains all the sound related content. 
+contains all the sound related content.<!-- more -->
 {: .fs-6 .fw-300 }
 
 ## Table of contents

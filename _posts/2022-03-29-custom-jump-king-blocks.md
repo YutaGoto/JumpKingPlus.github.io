@@ -9,9 +9,12 @@ comments: false
 toc: false
 pinned: false
 hidden: false
+coverImage: https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/Banner170.png
 ---
 
 <!-- more -->
+
+<img class="thumbnail" src="{{page.coverImage}}" alt="{{page.title}}" title="{{page.title}}" />
 
 ## Introduction
 

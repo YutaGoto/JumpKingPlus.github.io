@@ -5,22 +5,7 @@
     <link type="application/json+oembed" href="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/oembed.json">
 
     <!-- generic -->
-    <meta name="keywords" content="
-        jump king, 
-        jump, 
-        king, 
-        jumpkingplus,
-        jump king plus,
-        modding,
-        enhancement, 
-        nexile, 
-        phoenixx19,
-        merny,
-        elisiah,
-        sahandevs,
-        workshop,
-        custom levels,
-        custom skins">
+    <meta name="keywords" content="jump king, jump, king, jumpkingplus, jump king plus, modding, enhancement, nexile, phoenixx19, merny, elisiah, sahandevs, workshop, custom levels, custom skins">
     <meta name="author" content="JumpKingPlus' development team">
 
     <meta property="og:url" content="{{ site.url }}">
@@ -38,11 +23,15 @@
     <meta property="og:locale" content="en_US">
 
     {% if page.excerpt %}
-        <meta name="description" content="{{ page.excerpt | strip_html }}" />
-        <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
-        <meta property="twitter:description" content="{{ page.excerpt | strip_html }}" />
-    {% elsif page.layout == "blog" %}
-        
+        {% if page.layout == "blog" %}
+            <meta name="description" content="{{ page.subtitle }}">
+            <meta property="og:description" content="{{ page.subtitle }}" />
+            <meta property="twitter:description" content="{{ page.subtitle }}" />
+        {% else%}
+            <meta name="description" content="{{ page.excerpt | strip_html }}" />
+            <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
+            <meta property="twitter:description" content="{{ page.excerpt | strip_html }}" />
+        {% endif %}
     {% else %}
         <meta name="description" content="{{ site.description }}">
         <meta property="og:description" content="{{ site.description }}" />
@@ -57,9 +46,6 @@
         {% elsif page.layout == "blog" %}
             <meta property="og:image" content="{{ page.coverImage }}">
             <meta property="og:image:secure_url" content="{{ page.coverImage }}">
-            <meta name="description" content="{{ page.subtitle }}">
-            <meta property="og:description" content="{{ page.subtitle }}" />
-            <meta property="twitter:description" content="{{ page.subtitle }}" />
         {% else %}
             <meta property="og:image" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png">
             <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png">

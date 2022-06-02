@@ -79,17 +79,21 @@
                 {% if level.versions %}
                     {% for version in level.versions %}
                         {% if version.hidden == false %}
-                            <a class="dl-button" onclick="DlPlusOne({{ level.levelId }})"
-                                href="https://bit.ly/{{ version.bitly }}"
-                                style="margin-left: 1rem;"
-                                title="{{ version.name }}">
-                                <ion-icon name="download"></ion-icon>
+                            <a class="dl-button"
+                              onclick="DlPlusOne({{ level.levelId }}, '{{ version.bitly }}')"
+                              href="javascript:void(0);"
+                              style="margin-left: 1rem;"
+                              title="{{ version.name }}">
+                              <ion-icon name="download"></ion-icon>
                             </a>
                         {% endif %}
                     {% endfor %}
                 {% endif %}
                 {% if level.bitly %}
-                  <a class="dl-button" href="https://bit.ly/{{ level.bitly }}" title="Download" onclick="DlPlusOne({{ level.levelId }})">
+                  <a class="dl-button"
+                    href="javascript:void(0);"
+                    title="Download"
+                    onclick="DlPlusOne({{ level.levelId }}, '{{ level.bitly }}')">
                     <ion-icon name="download"></ion-icon>
                   </a>
                 {% endif %}

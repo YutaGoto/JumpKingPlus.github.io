@@ -21,9 +21,15 @@ layout: default
 <div id="blurred" class="blurred" style="background-image: url({{ page.images[0] }});"></div>
 
 <script>
-    function DlPlusOne() {
+    function DlPlusOne(link) {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "https://api.countapi.xyz/hit/JumpKingPlus/level{{ page.levelId }}");
+        xhr.responseType = "json";
+        xhr.onload = function() {
+          if (!!this.response.value) {
+            location.href = link;
+          }
+        }
         xhr.send();
     }
     function checkAchievement(input) {
@@ -71,8 +77,10 @@ layout: default
                 {% if page.versions %}
                     {% for version in page.versions %}
                         {% if version.hidden == false %}
-                            <a class="dl-button" onclick="DlPlusOne()"
-                                href="https://bit.ly/{{ version.bitly }}" style="margin-left: 1rem;"
+                            <a class="dl-button"
+                                onclick="DlPlusOne('{{ version.bitly }}')"
+                                href="javascript:void(0);"
+                                style="margin-left: 1rem;"
                                 title="{{ version.name }}">
                                 {{ version.short }} <ion-icon name="download"></ion-icon>
                             </a>
@@ -80,8 +88,9 @@ layout: default
                     {% endfor %}
                 {% endif %}
                 {% if page.bitly %}
-                    <a class="dl-button" onclick="DlPlusOne()"
-                        href="https://bit.ly/{{ page.bitly }}"
+                    <a class="dl-button"
+                        onclick="DlPlusOne('{{ page.bitly }}')"
+                        href="javacript:void(0);"
                         title="Download">
                         Download <ion-icon name="download"></ion-icon>
                     </a>

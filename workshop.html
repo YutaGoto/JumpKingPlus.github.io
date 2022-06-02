@@ -16,9 +16,15 @@ scores: ["Easy","Normal","Challenging","Moderate","Hard","Insane","Impossible"]
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
-    function DlPlusOne(value) {
+    function DlPlusOne(value, link) {
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "https://api.countapi.xyz/hit/JumpKingPlus/level"+value);
+        xhr.responseType = "json";
+        xhr.onload = function() {
+          if (!!this.response.value) {
+            location.href = link;
+          }
+        }
         xhr.send();
     }
   </script>

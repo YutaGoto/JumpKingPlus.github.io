@@ -65,7 +65,7 @@
       </div>
 
       {% for level in site.workshop reversed limit: 8 %}
-        {% if level.hidden == false %}
+        {% if level.hidden == false || level.testing == false %}
           <div class="card">
             <a href="{{ site.baseurl }}{{ level.id }}">
               <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;"

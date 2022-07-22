@@ -1,7 +1,7 @@
 ---
 title: Yu Ayasaki
 date: 2022-04-25
-Author: Blargel
+Author: Blargel & Erkstock
 base: [
     "Base", 
     "Cap",

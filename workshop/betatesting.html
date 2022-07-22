@@ -3,55 +3,62 @@
         Open for testing&nbsp;
         <span class="rounded-full level-tag" style="display: inline;font-size: smaller;">BETA</span>
     </h2>
-    <div class="feature">
-      
-        <p>The following custom levels are work in progress, meaning the result is <strong>not</strong> final. These are available to everyone to playtest.<br>Feedback is not mandatory but it's highly appriciated for the level creator(s). Enjoy!</p>
 
-        <div class="swiper-button-prev"><div class="gradient-prev"></div></div>
+    <div class="feature">
+
+        <p>The following custom levels are work in progress, meaning the result is <strong>not</strong> final. These are
+            available to everyone to playtest.<br>Feedback is not mandatory but it's highly appriciated for the level
+            creator(s). Enjoy!</p>
+
+        <div class="swiper-button-prev">
+            <div class="gradient-prev"></div>
+        </div>
 
         <div class="swiper-container swiper-testing">
             <div class="swiper-wrapper">
-                {% for level in site.workshop %}
+                {% for level in site.workshop reversed %}
                     {% if level.testing == true %}
-                        <div class="swiper-slide">
-                            <div class="card detail-card">
-                                <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;"
+                    <div class="swiper-slide">
+                        <div class="card detail-card">
+                            <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;"
                                 alt="{{ level.title }} by {{ level.Author }}">
-                                <div class="details">
-                                    <div class="title-level">
-                                        <span>{{ level.title }}</span>
-                                        {% if level.bitly %}
-                                            <a class="dl-button"
-                                                href="{{ level.bitly }}"
-                                                title="Download">
-                                                <ion-icon name="download"></ion-icon>
-                                            </a>
-                                        {% endif %}
-                                    </div>
-                                    <span class="author-level">
-                                        <ion-icon name="person"></ion-icon> {{ level.Author }}{{ scores[0] }}
-                                    </span>
-                                    <span class="author-level">
-                                        <ion-icon name="golf"></ion-icon> Status: <strong>{{ level.status }}</strong>
-                                    </span>
-                                    <span class="author-level">
-                                        <ion-icon name="calendar-clear"></ion-icon> Last updated: <strong>{{ level.date | date: "%B %d, %Y @ %R" }}</strong>
-                                    </span>
-                                    <p class="desc">
-                                        {{ level.excerpt | truncate: 100 }}
-                                      </p>
-                                    <a href="javascript:void(0);" class="button" onclick='contactClick("{{level.Author}}", {{level.contacts | jsonify }})'>
-                                        Contact {{ level.Author }}
+                            <div class="details">
+                                <div class="title-level">
+                                    <span>{{ level.title }}</span>
+                                    {% if level.bitly %}
+                                    <a class="dl-button" href="{{ level.bitly }}" title="Download">
+                                        <ion-icon name="download"></ion-icon>
                                     </a>
+                                    {% endif %}
                                 </div>
+                                <span class="author-level">
+                                    <ion-icon name="person"></ion-icon> {{ level.Author }}{{ scores[0] }}
+                                </span>
+                                <span class="author-level">
+                                    <ion-icon name="golf"></ion-icon> Status: <strong>{{ level.status }}</strong>
+                                </span>
+                                <span class="author-level">
+                                    <ion-icon name="calendar-clear"></ion-icon> Last updated: <strong>{{ level.date | date:
+                                        "%B %d, %Y @ %R" }}</strong> UTC+1
+                                </span>
+                                <p>
+                                    {{ level.update }}
+                                </p>
+                                <a href="javascript:void(0);" class="button"
+                                    onclick='contactClick("{{level.Author}}", {{level.contacts | jsonify }})'>
+                                    Contact {{ level.Author }}
+                                </a>
                             </div>
                         </div>
+                    </div>
                     {% endif %}
                 {% endfor %}
             </div>
         </div>
 
-        <div class="swiper-button-next"><div class="gradient-next"></div></div>
+        <div class="swiper-button-next">
+            <div class="gradient-next"></div>
+        </div>
 
         <!-- Initialize Swiper -->
         <script>
@@ -75,6 +82,6 @@
                 });
                 alert(stringa);
             }
-          </script>
-      </div>
-  </div>
+        </script>
+    </div>
+</div>

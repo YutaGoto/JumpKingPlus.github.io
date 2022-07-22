@@ -4,6 +4,7 @@ type: workshop
 title: Workshop
 collection-limit: 4
 reskin-limit: 20
+level-limit: 8
 levelId: 0
 scores: ["Easy","Normal","Challenging","Moderate","Hard","Insane","Impossible"]
 ---
@@ -29,8 +30,7 @@ scores: ["Easy","Normal","Challenging","Moderate","Hard","Insane","Impossible"]
     }
   </script>
 
-  {% include_relative workshop/featured.html %}
-  {% include_relative workshop/betatesting.html %}
-  {% include_relative workshop/reskins.html %}
-  {% include_relative workshop/skincollections.html %}
-  {% include_relative workshop/levels.html %}
+{% include_relative workshop/betatesting.html %}
+{% include_relative workshop/reskins.html %}
+{% include_relative workshop/skincollections.html %}
+{% include_relative workshop/levels.html %}

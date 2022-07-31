@@ -46,7 +46,7 @@
         },
         {
             "name": "Volcanic",
-            "contribute": ["Bug catcher"]
+            "contribute": ["Feature idea", "Bug catcher"]
         },
         {
             "name": "GGamer",
@@ -58,7 +58,7 @@
         },
         {
             "name": "DolpIn_62",
-            "contribute": ["Bug catcher"]
+            "contribute": ["Feature idea", "Bug catcher"]
         },
         {
             "name": "Karton",
@@ -78,7 +78,7 @@
         },
         {
             "name": "kkaero",
-            "contribute": ["Feature idea", "Documentation helper"]
+            "contribute": ["Feature idea", "Documentation helper", "Bug catcher"]
         },
         {
             "name": "Taft",
@@ -91,6 +91,10 @@
         {
             "name": "tsiiga",
             "contribute": ["Bug catcher"]
+        },
+        {
+            "name": "Brunov",
+            "contribute": ["Feature idea", "Bug catcher"]
         }
     ]
 }

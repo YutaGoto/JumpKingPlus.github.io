@@ -18,7 +18,8 @@ Welcome to the documentation for custom levels, reskins and collections on Jump 
 - Added compatibility column for the newest JumpKingPlus version (v1.7.1).
 - Added documentation for custom RGBA accents and missing StartingPosition details.
 - Added additional details for disabling the percentage in a specific location.
-- Fixed optional/required tags' position.<!-- more -->
+- Fixed optional/required tags' position.
+- Fixed typo in configuration page.<!-- more -->
 
 ### Contributors
 
@@ -30,6 +31,7 @@ Welcome to the documentation for custom levels, reskins and collections on Jump 
     {% include contributor.html name="Erkstock" source="discord" %}
     {% include contributor.html name="kebb" source="github" %}
     {% include contributor.html name="DinoScythe63" source="discord" %}
+    {% include contributor.html name="Mental Masochist" source="discord" %}
 </ul>
 
 #### Contribution

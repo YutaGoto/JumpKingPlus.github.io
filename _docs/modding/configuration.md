@@ -37,7 +37,7 @@ contains all the general details about the custom level, such as the following:
 |`<ending_screen_nbp>`|Screen where the second babe spawns (New Babe Plus)|int|No|
 |`<ending_screen_owl>`|Screen where the third babe spawns (Ghost of the Babe)|int|No|
 |`<disableProgress>`|Disable level percentage|boolean|No|
-|`<StartingPositon>`|[Read more about the starting position here.](#startposition)|StartPosition|No|
+|`<StartingPosition>`|[Read more about the starting position here.](#startposition)|StartPosition|No|
 
 The title will show up only when the game started is Main Babe / Normal Game.
 

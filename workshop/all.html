@@ -30,7 +30,7 @@ title: All custom levels
             <span>{{ level.title }}</span>
             </a>
             {% if level.bitly %}
-            <a class="dl-button" href="https://bit.ly/{{ level.bitly }}" title="Download">
+            <a class="dl-button" href="{{ level.bitly }}" title="Download">
                 <ion-icon name="download"></ion-icon>
             </a>
             {% endif %}

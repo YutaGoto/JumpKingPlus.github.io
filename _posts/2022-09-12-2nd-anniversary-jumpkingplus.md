@@ -96,7 +96,7 @@ In short, it's worth it! 🙂
 
 Make your own map! Kind JK discord people will help you. including me.
 
-### IntroCar (Battle of the Babe creator)
+#### IntroCar (Battle of the Babe creator)
 
 All the new works for custom maps as well as additions to JumpKingPlus has been amazing to see over these 2 years, super proud of everyone for their support and feedback, as well as others for their hard work on custom maps/JumpKingPlus features. Y'all are the best <3
 

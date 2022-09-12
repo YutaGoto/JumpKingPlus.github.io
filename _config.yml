@@ -31,8 +31,8 @@ navigation:
   - name: <span title="Workshop"><ion-icon name="hammer"></ion-icon> workshop</span>
     url: /workshop
     class: button outline small
-  - name: <span title="1st anniversary of JumpKingPlus"><ion-icon name="ribbon"></ion-icon> One year!</span>
-    url: /1st-anniversary-jumpkingplus
+  - name: <span title="2nd anniversary of JumpKingPlus"><ion-icon name="ribbon"></ion-icon> Two years!</span>
+    url: /2nd-anniversary-jumpkingplus
     class: anniversary
 
 # 每页的文章数

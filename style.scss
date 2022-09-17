@@ -1325,9 +1325,10 @@ a.button {
 
       img {
         width: 100%;
-        height: auto;
+        height: 636px;
         border-radius: 20px;
         box-shadow: 0 10px 15px -3px rgba(0,0,0,.2), 0 4px 6px -2px rgba(0,0,0,.15);
+        object-fit: cover;
       }
     }
   }
@@ -1734,16 +1735,30 @@ nav {
 }*/
 
 .disclaimer {
+  max-width: unset;
   background-color: rgb(255, 230, 0);
   border-bottom: 1px solid rgb(255, 217, 0);
 
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1280px;
+    padding: 1.125rem;
+    gap: 1.5rem;
+  }
+
+  ion-icon {
+    font-size: 1.75rem;
+  }
+
   p {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 1.3rem;
-    text-align: center;
+    /*font-weight: 600;
+    letter-spacing: 1px;*/
+    //font-size: 1.3rem;
     margin: 0;
-    padding: 1.25rem;
+    //flex: 1;
   }
 }
 

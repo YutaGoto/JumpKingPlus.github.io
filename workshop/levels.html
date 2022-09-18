@@ -1,10 +1,14 @@
-<div class="category">
-  <h2 class="ws-titles">Latest levels&nbsp;
+<div class="category" id="level">
+  <h2 class="ws-titles">
+    <div>
+      <span><ion-icon name="sparkles"></ion-icon> Latest polished</span>
+      <a href="javascript:void(0)" onclick="ShowCategory(true)"><ion-icon name="skull"></ion-icon> Latest challenges</a>
+    </div>
     <span>
       <a class="button initial transparent btn--primary btn-demo js-tingle-modal-3">
         <ion-icon name="help-circle"></ion-icon> Installation method
       </a>
-      <a class="button initial transparent" href="{{ site.baseurl }}/workshop/all">
+      <a class="button initial transparent" href="{{ site.baseurl }}/workshop/polished">
         See all <ion-icon name="arrow-forward"></ion-icon>
       </a>
     </span>
@@ -53,7 +57,7 @@
     modalTinyNoFooter3.setContent(document.querySelector('.tingle-tiny-3').innerHTML);
   </script>
 
-  <div class="levels">
+  <div class="levels polished">
 
     <div class="card wip">
       <div class="details">
@@ -69,7 +73,7 @@
 
     {% assign count = 0 %}
     {% for level in site.workshop reversed %}
-    {% if level.hidden == false and level.testing != true %}
+    {% if level.hidden == false and level.testing != true and level.isPolished %}
     {% assign count = count | plus: 1 %}
     {% if count <= page.level-limit %} <div class="card">
       <a href="{{ site.baseurl }}{{ level.id }}">
@@ -114,17 +118,17 @@
           {% endfor %}
         </div>
       </div>
-  </div>
-  {% endif %}
-  {% endif %}
-  {% endfor %}
+    </div>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
 
   <div style="width:45%;margin-top: 25px;">
-    <a class="button outline" href="{{ site.baseurl }}/workshop/all" style="display: block;margin: 0;text-align:  center;">
+    <a class="button outline" href="{{ site.baseurl }}/workshop/polished" style="display: block;margin: 0;text-align:  center;">
       See all <ion-icon name="arrow-forward"></ion-icon>
     </a>
   </div>
-  
+
   <!-- <div class="card wip" style="margin-top: 25px;">
     <a class="button transparent" href="{{ site.baseurl }}/workshop/all" style="width: 100%;display: block;margin: 0;">
       See all <ion-icon name="arrow-forward"></ion-icon>
@@ -133,15 +137,108 @@
 
 </div>
 
+<!-- ------------------------------ -->
+
+<div class="levels challenge">
+  {% assign count = 0 %}
+    {% for level in site.workshop reversed %}
+    {% if level.hidden == false and level.testing != true and level.isPolished != true %}
+    {% assign count = count | plus: 1 %}
+    {% if count <= page.level-limit %} <div class="card">
+      <a href="{{ site.baseurl }}{{ level.id }}">
+        <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;"
+          alt="{{ level.title }} by {{ level.Author }}">
+      </a>
+      <div class="details">
+        <div class="title-level">
+          <a href="{{ site.baseurl }}{{ level.id }}">
+            <span>{{ level.title }}</span>
+          </a>
+          {% if level.versions %}
+          {% for version in level.versions %}
+          {% if version.hidden == false %}
+          <a class="dl-button" onclick="DlPlusOne({{ level.levelId }}, '{{ version.bitly }}')"
+            href="javascript:void(0);" style="margin-left: 1rem;" title="{{ version.name }}">
+            <ion-icon name="download"></ion-icon>
+          </a>
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+          {% if level.bitly %}
+          <a class="dl-button" href="javascript:void(0);" title="Download"
+            onclick="DlPlusOne({{ level.levelId }}, '{{ level.bitly }}')">
+            <ion-icon name="download"></ion-icon>
+          </a>
+          {% endif %}
+        </div>
+        <span class="author-level">
+          <ion-icon name="person"></ion-icon> {{ level.Author }}{{ scores[0] }}
+        </span>
+        <p class="desc">
+          {{ level.excerpt | truncate: 300 }}
+        </p>
+        <div class="details" style="padding: 0;">
+          {% for tag in level.tags %}
+          <a class="tag-link" href="{{ site.url }}{{ site.baseurl }}/workshop/tags/?tag={{ tag }}">
+            <span class="rounded-full level-tag">
+              <span style="color: #868e96;">#</span>{{ tag }}
+            </span>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+      {% endif %}
+      {% endif %}
+      {% endfor %}
+  
+      <div style="width:45%;margin-top: 25px;">
+        <a class="button outline" href="{{ site.baseurl }}/workshop/challenges" style="display: block;margin: 0;text-align:  center;">
+          See all <ion-icon name="arrow-forward"></ion-icon>
+        </a>
+      </div>
+</div>
+
 <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
 <script>
   let magicGrid = new MagicGrid({
-    container: ".levels", // Required. Can be a class, id, or an HTMLElement.
+    container: ".polished", // Required. Can be a class, id, or an HTMLElement.
     static: true, // Required for static content.
     gutter: 40, // Optional. Space between items. Default: 25(px).
     maxColumns: 2, // Optional. Maximum number of columns. Default: Infinite.
   });
+  let magicGrid2 = new MagicGrid({
+    container: ".challenge",
+    static: true,
+    gutter: 40,
+    maxColumns: 2,
+  });
 
   magicGrid.listen();
+  magicGrid2.listen();
+
+  function ShowCategory(bool) {
+      //console.log(document.querySelector("#level .ws-titles >span >*:last-child"));
+      if (bool) {
+        document.querySelector(".levels.challenge").style.display = "block";
+        document.querySelector(".levels.polished").style.display = "none";
+        document.querySelector("#level .ws-titles >span >*:last-child").href = "{{ site.baseurl }}/workshop/challenges";
+      } else {
+        document.querySelector(".levels.challenge").style.display = "none";
+        document.querySelector(".levels.polished").style.display = "block";
+        document.querySelector("#level .ws-titles >span >*:last-child").href = "{{ site.baseurl }}/workshop/polished";
+      }
+      var span = document.querySelector(".ws-titles div span");
+      var a = document.createElement('a');
+      a.innerHTML = span.innerHTML;
+      a.setAttribute("onclick",`ShowCategory(${!bool})`);
+      let b = document.querySelector(".ws-titles div a");
+      let span2 = document.createElement('span');
+      span2.innerHTML = b.innerHTML;
+      span.parentNode.replaceChild(a,span);
+      b.parentNode.replaceChild(span2,b);
+      magicGrid.listen();
+      magicGrid2.listen();
+    }
 </script>
 </div>

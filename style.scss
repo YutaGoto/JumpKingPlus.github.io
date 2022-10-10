@@ -2209,10 +2209,10 @@ ul.nav-list {
   display: block;
 }
 
-.contributors li::before {
+.contributors li::before, .supporters li::before {
   content: none;
 }
-.contributors li {
+.contributors li, .supporters li {
   display: inline-flex;
   align-items: center;
   padding: .5rem 1rem;
@@ -2232,6 +2232,32 @@ ul.nav-list {
     fill:#868e96;
     width: 1rem;
     vertical-align:middle;
+  }
+}
+.supporters {
+  margin-bottom: 1.5rem;
+
+li {
+  border: 1px solid #b79455;
+  background: rgba($color: #b79455, $alpha: .2);
+  font-weight: 600;
+  font-size: 125%;
+
+  ion-icon {
+      fill: #b79455;
+      width: 1.25rem;
+    }
+  }
+
+a {
+    border-radius: 10px;
+    margin: 0%;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    padding: .5rem 1rem;
+    font-size: 125%;
+    height: 49px;
+    vertical-align: top;
   }
 }
 

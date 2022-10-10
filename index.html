@@ -196,6 +196,13 @@
               </div>
             </div>
           </div>
+          <h3>Supporters of the project</h3>
+          <ul class="supporters">
+            <a href="https://www.paypal.me/{{ site.footer-links.paypal }}" class="button">Become a Gigachad <ion-icon name="logo-paypal" style="vertical-align: middle;"></ion-icon></a>
+            {% for supporter in site.data.supporters.supporters %}
+            {% include supporter.html name=supporter.name contribution=supporter.amount %}
+            {% endfor %}
+          </ul>
           <h3>Community contributors <span title="The current contributors' wall is ordered by date of contribution." style="font-size:small;vertical-align:top;cursor:help;">?</span> </h3>
           <ul class="contributors">
             {% for contributor in site.data.contributors.contributors %}

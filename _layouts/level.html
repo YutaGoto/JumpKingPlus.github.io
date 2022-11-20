@@ -371,23 +371,25 @@ layout: default
             <div class="swiper-wrapper">
                 {% for level in site.workshop reversed %}
                     {% if level.hidden == false and level.isPolished == page.isPolished and level.title != page.title %}
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" style="flex-shrink: 1;">
                         <div class="card" style="min-width: 350px;max-width:75%;">
                             <a href="{{ site.baseurl }}{{ level.id }}">
-                                <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;width: 100%;height:63.5%;max-width:unset;"
+                                <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover; width: 100%; height: 100%;"
                                     alt="{{ level.title }} by {{ level.Author }}">
-                                <div class="details">
-                                    <div class="title-level">
-                                        <span>{{ level.title }}</span>
-                                    </div>
-                                    <span class="author-level">
-                                        <ion-icon name="person"></ion-icon> {{ level.Author }} &nbsp;
-                                        <ion-icon name="calendar"></ion-icon> {{ level.date | date: "%d %b, %Y" }}
-                                    </span>
-                                    <span class="author-level">
-                                    </span>
-                                </div>
                             </a>
+                            <div class="details">
+                                <div class="title-level">
+                                    <a href="{{ site.baseurl }}{{ level.id }}">
+                                        <span>{{ level.title }}</span>
+                                    </a>
+                                </div>
+                                <span class="author-level">
+                                    <ion-icon name="person"></ion-icon> {{ level.Author }} &nbsp;
+                                    <ion-icon name="calendar"></ion-icon> {{ level.date | date: "%d %b, %Y" }}
+                                </span>
+                                <span class="author-level">
+                                </span>
+                            </div>
                         </div>
                     </div>
                     {% endif %}

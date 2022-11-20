@@ -21,7 +21,7 @@ title: All challenge levels
     {% if level.hidden == false and level.isPolished != true %}
     <div class="card">
         <a href="{{ site.baseurl }}{{ level.id }}">
-        <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover;"
+        <img src="{{ level.images[0] }}" style="border-radius: 0; margin: 0; object-fit: cover; width: 100%; max-height: 100%;"
                 alt="{{ level.title }} by {{ level.Author }}">
         </a>
         <div class="details">

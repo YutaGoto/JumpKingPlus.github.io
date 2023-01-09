@@ -84,6 +84,16 @@ p {
   margin: 1em 0;
 }
 
+.bg-red {
+  background: rgba($color: red, $alpha: 0.25);
+}
+.bg-yel {
+  background-color: rgba($color: yellow, $alpha: 0.25);
+}
+.bg-grn {
+  background-color: rgba($color: green, $alpha: 0.25);
+}
+
 a {
   color: $link-color;
   text-decoration: none;

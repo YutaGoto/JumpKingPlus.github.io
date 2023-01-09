@@ -159,7 +159,8 @@ In order to get the full potential of a quark block:
       <td>JK+ v1.3.1</td>
       <td>JK+ v1.4.0 to v1.6.1</td>
       <td>JK+ v1.7.0</td>
-      <td>JK+ v1.7.1 or newer</td>
+      <td>JK+ v1.7.1 to v1.8.1</td>
+      <td>JK+ v1.8.2 or newer</td>
     </tr>
   </thead>
   <tbody>
@@ -213,60 +214,41 @@ In order to get the full potential of a quark block:
     </tr> -->
     <tr>
       <th>Low gravity</th>
-      <td>&cross;</td>
-      <td>? <a href="#block1">*¹</a></td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
+      <td class="bg-red">&cross;</td>
+      <td class="bg-yel">? <a href="#block1">*¹</a></td>
+      <td class="bg-grn" colspan="5">&check;</td>
     </tr>
     <tr>
       <th>Wind gradients</th>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
+      <td class="bg-red" colspan="3">&cross;</td>
+      <td class="bg-grn" colspan="4">&check;</td>
     </tr>
     <tr>
       <th>One-way wind gradients</th>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
-      <td>&check;</td>
+      <td class="bg-red" colspan="3">&cross;</td>
+      <td class="bg-grn" colspan="4">&check;</td>
     </tr>
     <tr>
       <th>Warp</th>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
+      <td class="bg-red" colspan="4">&cross;</td>
+      <td class="bg-yel" colspan="2">? <a href="#block2">*²</a></td>
+      <td class="bg-grn">&check;</td>
     </tr>
     <tr>
       <th>Semi-solid</th>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
-      <td>&check;</td>
+      <td class="bg-red" colspan="4">&cross;</td>
+      <td class="bg-grn" colspan="3">&check;</td>
     </tr>
     <tr>
       <th>Double teleport</th>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&cross;</td>
-      <td>&check;</td>
+      <td class="bg-red" colspan="5">&cross;</td>
+      <td class="bg-grn" colspan="2">&check;</td>
     </tr>
   </tbody>
 </table>
 
 > \*¹ - From version v1.2.0 to v1.3.0, there was a [**bug**](https://twitter.com/i/status/1358425873825734656) related to low gravity where the player standing on solid blocks would *graphically* jump. Later fixed on v1.3.1. 
 {: #block1 }
+
+> \*¹ - From version v1.7.0 to v1.8.1, there was a bug related to warp where the player  would teleport in a different screen in certain occasions. Later fixed on v1.8.2. 
+{: #block2 }

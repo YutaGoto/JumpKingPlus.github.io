@@ -54,7 +54,7 @@
                         {% assign imgIndex = forloop.index %}
                         {% for image in level.images %}
                           {% if forloop.index != 1 %}
-                            "https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/workshop/levels/ws{{ imgIndex }}-{{ forloop.index }}.png",
+                            "{{ image }}",
                           {% endif %}
                         {% endfor %}
                       {% endfor %}

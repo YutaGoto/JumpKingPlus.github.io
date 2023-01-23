@@ -1,6 +1,18 @@
+<div class="disclaimer">
+  <div class="container">
+    <ion-icon name="flask"></ion-icon>
+    <p>In collaboration with <strong>Nexile</strong>, we are building a solution to help you <strong>convert your creations to the upcoming Steam Workshop update</strong>!</p>
+    <a href="/the-new-workshop">Learn more...</a>
+  </div>
+</div>
+
 <div class="wrapper-sidebar header desktop">
   <header class="sidebar">
+    {% if page.home %}
+    <a class="site-title" href="#">
+    {% else %}
     <a class="site-title" href="{{ site.baseurl }}/workshop/">
+    {% endif %}
       <img src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png" alt="JumpKingPlus">
       <h1 class="site-name">JumpKingPlus</h1>
     </a>

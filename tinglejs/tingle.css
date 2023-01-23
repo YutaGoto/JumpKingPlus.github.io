@@ -27,6 +27,12 @@
   }
 }
 
+@supports (-webkit-backdrop-filter: blur(10px)) {
+  .tingle-modal {
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
+
 /* confirm and alerts
 -------------------------------------------------------------- */
 

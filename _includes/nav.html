@@ -1,17 +1,24 @@
-<!-- <div class="disclaimer">
+{% if page.banner != false %}
+<div class="disclaimer">
   <div class="container">
-    <ion-icon name="ban"></ion-icon>
-    <p><strong>Google Chrome</strong> and <strong>Microsoft Windows</strong> have mistakenly blocked our installer.</p>
-    <a class="" href="/transparency">Learn more...</a>
+    <ion-icon name="flask"></ion-icon>
+    <p>In collaboration with <strong>Nexile</strong>, we are building a solution to help you <strong>convert your creations to the upcoming Steam Workshop update</strong>!</p>
+    <a href="/the-new-workshop">Learn more...</a>
   </div>
-</div> -->
+</div>
+{% endif %}
 
 <div class="wrapper-sidebar header desktop">
   <header class="sidebar">
+    {% if page.home %}
+    <a class="site-title" href="#">
+    {% else %}
     <a class="site-title" href="{{ site.baseurl }}/">
+    {% endif %}
       <img src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkpluslogo.png" alt="JumpKingPlus">
       <h1 class="site-name">JumpKingPlus</h1>
     </a>
+
     <nav>
       {% for nav in site.navigation %}
         {% if nav.url contains 'http://' or nav.url contains 'https://' %}

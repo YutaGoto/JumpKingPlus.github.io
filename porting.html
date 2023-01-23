@@ -1,0 +1,45 @@
+---
+title: Content Port
+layout: default
+is_full: true
+banner: false
+---
+
+<section id="home" class="wrapper-content header">
+  <div class="container">
+      <section>
+          <div class="content">
+              <h1 class="alkhemikal">Get ready for the future of Jump King content</h1> <!-- Get ready for the future of Jump King -->
+              <p>With our new tool, you can convert your JumpKingPlus-item to a ready-to-publish Workshop item in a matter of seconds!</p>
+              <a class="button" href="https://github.com/JumpKingPlus/ContentPort/releases/latest">
+                  <ion-icon style="vertical-align: baseline;" name="download"></ion-icon> Get it now
+              </a>
+              <span id="downloads">
+                <script>
+                  async function GET(url) {
+                      const response = await fetch(url);
+                      const json = await response.json();
+                      return json;
+                  }
+
+                  function ParseGithubData(json) {
+                    let dl = 0;
+                    json.forEach(release => {
+                      release.assets.forEach(asset => {
+                        dl = Number(dl) + Number(asset.download_count);
+                      });
+                    });
+                    return dl.toLocaleString(undefined);
+                  }
+      
+                  GET("https://api.github.com/repos/JumpKingPlus/ContentPort/releases")
+                      .then(success => {
+                        document.getElementById('downloads').innerText = ParseGithubData(success) + " total downloads";
+                      })
+              </script>
+              </span>
+          </div>
+          <img class="banner" src="/images/ContentPort.png" alt="Tool preview">
+      </section>
+  </div>
+</section>

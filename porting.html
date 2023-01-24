@@ -65,15 +65,100 @@ banner: false
       </div>
     </div>
   </div>
+  <div class="container" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="flex">
+      <ul class="nav-list">
+        <li class="nav-list-item active">
+          <a onclick="DisplayAnswer(this, '1')" class="nav-list-link active">How do I get started?</a>
+        </li>
+        <li class="nav-list-item">
+          <a onclick="DisplayAnswer(this, '2')" class="nav-list-link">How do I convert an item?</a>
+        </li>
+        <li class="nav-list-item">
+          <a onclick="DisplayAnswer(this, '3')" class="nav-list-link">I have an issue...</a>
+        </li>
+        <li class="nav-list-item">
+          <a onclick="DisplayAnswer(this, '4')" class="nav-list-link">I found a bug! 🐛</a>
+        </li>
+      </ul>
+      <div id="answersList" class="answer">
+        <div id="answer1">
+          <p>Firstly, you will need to download Content Port from the <a href="#top"><strong>download button above</strong></a>.</p>
+          <ol>
+            <li>Open the zip file by double clicking it.</li>
+            <li>Select <strong>all</strong> files inside the zip file and drag them out.<br>Save it somewhere where you will remember where it is.</li>
+            <li>You're set!</li>
+          </ol>
+        </div>
+        <div id="answer2" style="display: none;">
+          <ol>
+            <li>Double click <code>JKPort.exe</code> to open it.</li>
+            <li>Once opened will see two buttons:
+              <ul>
+                <li><strong>Select files...</strong>; will prompt you a dialog for choosing multiple files, for converting <strong>only reskins and collections</strong>.</li>
+                <li><strong>Select folder...</strong>; will prompt you a dialog for choosing a folder, for everything (levels, reskins and collections).</li>
+              </ul>
+              Choose the more appropriate for you and click it! If you have any issues, follow the prompts on screen or <a href="https://discord.gg/{{ site.footer-links.discord }}">contact us over on Discord</a>.
+            </li>
+            <li>Check if the item details are correct in the new box that just appeared.</li>
+            <li>Click <strong>Convert!</strong> and let the magic happen!</li>
+          </ol>
+        </div>
+        <div id="answer3" style="display: none;">
+          <p>
+            <strong>We're really sorry this happened, <u>but let us help you out</u>!</strong>
+          </p>
+          <ol>
+            <li>Join the official <a target="_blank" href="https://discord.gg/{{ site.footer-links.discord }}"><ion-icon name="logo-discord"></ion-icon> <strong>Jump King Discord server</strong></a>,</li>
+            <li>Navigate to the <a href="https://discord.com/channels/547420017738907657/602853569200128051"><strong>#bugs</strong> text channel</a></li>
+            <li>And tell us what happened!</li>
+          </ol>
+          <p>We'll help you out to figure out your issue!</p>
+        </div>
+        <div id="answer4" style="display: none;">
+          <h3>Good job catching it! Thank you for your service!</h3>
+          <p>
+            Report it <a href="https://github.com/JumpKingPlus/ContentPort/issues/new">over on Github</a> or on the <a href="https://discord.com/channels/547420017738907657/602853569200128051"><strong>#bugs</strong> text channel</a>.<br>
+            If it gets solved you will get featured in our community contributors wall in the homepage!
+          </p>
+        </div>
+      </div>
+      <script>
+        function DisplayAnswer(item, number) {
+          var oldAnswer = document.querySelector(".nav-list-item.active");
+          oldAnswer.classList.remove('active');
+          oldAnswer.children[0].classList.remove('active');
+          item.classList.add('active');
+          item.parentNode.classList.add('active');
+          var newAnswer = document.getElementById('answer'+number);
+          var answers = document.getElementById('answersList');
+          [...answers.children].forEach(element => {
+            element.style.display = 'none';
+            if (element = newAnswer) {
+              element.style.display = 'block';
+            }
+          });
+        }
+      </script>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="wrapper-content header">
+<section id="download" class="wrapper-content header">
   <div class="container">
-    <h2>Still not convinced yet?</h2>
-    <p>If you have a question to ask us, talk about the development or just have a chat.<br>Tweet us a message or join the official Jump King's Discord server!</p>
+    <h2>What are you waiting for?</h2>
+    <p>Your item is just a few clicks away from being published in the just released Steam Workshop!<br>
+      Disclaimer: The current project is <strong>still in development and it is subject to change</strong>,<br>
+      learn more about <a href="/the-new-workshop"><strong>why Content Port exists</strong></a> or join the Discord for any further questions!
+    </p>
     <div>
-      <a target="_blank" href="https://www.twitter.com/{{ site.footer-links.twitter }}"><ion-icon name="logo-twitter"></ion-icon> Tweet</a>
-      <a target="_blank" class="button small" style="margin-left: 1rem;" href="https://discord.gg/{{ site.footer-links.discord }}"><ion-icon name="logo-discord"></ion-icon> Join the Discord server</a>
+      <a target="_blank" href="https://discord.gg/{{ site.footer-links.discord }}">
+        <ion-icon name="logo-discord"></ion-icon> Join the conversation
+      </a>
+      <a target="_blank" class="button small" style="margin-left: 1rem;" href="https://github.com/JumpKingPlus/ContentPort/releases/latest">
+        <ion-icon name="download" style="vertical-align: baseline;"></ion-icon> I'll give it a shot!
+      </a>
     </div>
   </div>
 </section>

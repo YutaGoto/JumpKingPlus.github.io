@@ -172,20 +172,40 @@ article.blog {
     margin: 5rem 0;
   }
   .entry {
-    img {
+    div.frame-container {
+      position: relative;
+      overflow: hidden;
+      padding: 73.125% 0 0 0; // 130 / (16 / 9)
+
+      @include mobile {
+        padding: 56.25% 0 0 0;
+      }
+      
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    img, div.frame-container {
       margin: 5rem 0;
       margin-left: -15%;
       width: 130%;
       max-width: 130%;
-    }
-    .thumbnail {
-      margin-top: 0;
-      margin-bottom: 0;
 
       @include mobile {
         width: calc(100% + 40px);
         margin-left: -20px;
       }
+    }
+    .thumbnail {
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
   
@@ -1212,19 +1232,17 @@ a.button {
 
 
 #home {
-  &:has(section img.banner) {
+  &.porting-home {
     overflow: hidden;
     background: radial-gradient(at 50% 87.5%, lighten($color: $link-color, $amount: 10) 0%, transparent 57.5%);
+  
+    section {
+      height: 85vh;
+    }
   }
 
   section {
-    &:has(div.content.floating, img.banner) {
-      position: relative;
-    }
-
-    &:has(img.banner) {
-      height: 85vh;
-    }
+    position: relative;
 
     div.content {
       padding: 3rem;
@@ -1415,6 +1433,9 @@ a.button {
 }
 
 #features, #team {
+  > div {
+    border: 0;
+  }
   .grid {
     margin: 1.5rem 0;
     position: relative;

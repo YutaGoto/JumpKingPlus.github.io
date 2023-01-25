@@ -208,7 +208,6 @@ article.blog {
       margin-bottom: 0;
     }
   }
-  
 }
 
 .details {
@@ -1706,6 +1705,18 @@ a.button {
     margin: 0;
     padding: 4rem 2rem;
   }
+  article.blog {
+    .entry {
+      div.frame-container {
+        padding: 56.25% 0 0 0;
+      }
+      img, div.frame-container {
+        margin: 5rem 0;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 1200px) {
   #main.wrapper-content.ext {
@@ -2208,6 +2219,17 @@ tr.exclusive {
   border: 1px solid $divider-color;
   background: $background-color;
   overflow-y: hidden;
+  
+  a {
+    letter-spacing: initial;
+    line-height: 1.2;
+    color: black;
+    margin: 0;
+
+    &:hover {
+      color: darkgrey;
+    }
+  }
 }
 .side-bar{
   margin-top: 2rem;
@@ -2226,6 +2248,9 @@ ul.nav-list > li::before {
   content: ""!important;
 }
 ul.nav-list {
+  &>li:first-child {
+    margin: 0 1.4em 0.4em 1.4em;
+  }
   border-top: 1px solid $divider-color;
   border-bottom: 1px solid $divider-color;
   padding: 0.7rem 0!important;
@@ -2417,9 +2442,10 @@ article.page.level details {
 
 
 @media (prefers-color-scheme: dark) {
-  ::-moz-selection { background: rgb(75, 75, 75); }
+  ::-moz-selection { background: rgb(125, 125, 125); }
   ::selection { background: rgb(75, 75, 75); }
-  h1, h2, h3, h4, h5, h6, p, .site-name, .title-level, details, summary { color: white; }
+  h1, h2, h3, h4, h5, h6, p, .site-name, .title-level, details, summary, .site-nav a { color: white; }
+  .site-nav a:hover { color: lightgrey; }
   article.page.level { background: linear-gradient(0deg, rgb(25, 25, 25) calc(100% - 125px), rgba(255, 255, 255, 0) 115%); }
   .entry hr, hr { border-color: rgb(50, 50, 50); }
   .details tr > td:first-child { color: lightgrey; }

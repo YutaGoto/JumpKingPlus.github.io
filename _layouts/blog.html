@@ -14,10 +14,23 @@ layout: default
     {% endcapture %}
 
 <article class="blog">
-  <a href="{{ site.baseurl }}/tags/?tag=blog" class="button outline"><ion-icon name="arrow-back"></ion-icon>Back to the blog</a>
+  {% if page.toc == false %}
+    <a href="{{ site.baseurl }}/tags/?tag=blog" class="button"><ion-icon name="arrow-back"></ion-icon>Back to the blog</a>
+  {% endif %}
+  {% if prev_post != null %}
+                <a class="button outline" href="{{ site.url }}{{ site.baseurl }}{{ prev_post.url }}">
+                  <ion-icon name="arrow-back"></ion-icon> Previous post
+                </a>
+              {% endif %}
+              {% if next_post != null %}
+                <a class="button outline" href="{{ site.url }}{{ site.baseurl }}{{ next_post.url }}">
+                  <ion-icon name="arrow-forward"></ion-icon> Next post
+                </a>
+              {% endif %}
   <div class="meta">
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.subtitle }}</h2>
+    <h1 class="no_toc">{{ page.title }}</h1>
+    <h2 class="no_toc">{{ page.subtitle }}</h2>
+    <h1 style="display: none;">{{ page.title }}</h1>
     <span class="date">
       <span>{{ page.date | date_to_long_string: "ordinal" }} • {{time_words | divided_by: 60}} minutes read</span>
       <span style="float: right;">written by <strong>{{ page.Author }}</strong></span>
@@ -30,22 +43,3 @@ layout: default
 </article>
 
 <img src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/splat.png" alt="splat" style="margin: 4em auto -2em auto;">
-
-  <!--
-<div class="pagination">
-  {% if page.previous.url %}
-    <span class="prev" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-        ← Previous
-      </a>
-    </span>
-  {% endif %}
-  {% if page.next.url %}
-    <span class="next" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-        Next →
-      </a>
-    </span>
-  {% endif %}
-</div>
--->

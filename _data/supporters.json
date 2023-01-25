@@ -1,6 +1,10 @@
 {
     "supporters": [
         {
+            "name": "Trombikus",
+            "amount": 11
+        },
+        {
             "name": "Anonymous",
             "amount": 10
         },
@@ -14,10 +18,6 @@
         },
         {
             "name": "Mahly",
-            "amount": 5
-        },
-        {
-            "name": "Trombikus",
             "amount": 5
         },
         {

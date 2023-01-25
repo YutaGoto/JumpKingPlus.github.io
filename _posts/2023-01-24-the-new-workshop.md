@@ -6,7 +6,7 @@ date: 2023-01-24
 Author: Phoenixx19
 tags: [blog]
 comments: false
-toc: false
+toc: true
 pinned: true
 hidden: false
 ---
@@ -22,14 +22,17 @@ As you might or might not know, I've been working for Nexile for a good while no
 Even though it might sound like I've been working for just couple weeks since the reveal, I've actually been working with Nexile for what could be six months at this point and by the time this blogpost goes up, the new update will be released as a beta.
 
 ### What's this update?
+{: #update }
 
 Okay let's take a step back.
 
-As ThomasOfTawny mentioned, this update will be community-oriented; some, many have speculated that this will be something that has to do with Workshop and I'm here to say finally:
+As ThomasOfTawny mentioned in the clip above, this free update will be community-oriented.<br>Some, many have speculated that this will be something that has to do with Workshop...
 
-Yes and it is happening.
+![lmao](/images/blog3-1.png)
 
-Jump King is getting a Workshop update, but not just like a JumpKingPlus preinstalled binary where you have to rename folders and files that mess like what we used to do before, a proper update for Jump King. Meaning you should expect some JumpKingPlus features be present in the new vanilla Jump King, some new features and improvements and bug fixes. The full list of changes are available in the [Jump King Update Changelog]() though.
+Yes, it is confirmed now.
+
+**Jump King is getting a Workshop update**, but not just like a JumpKingPlus preinstalled binary where you have to rename folders and files that mess like what we used to do before, a **proper update** for Jump King. Meaning you should expect some **JumpKingPlus features** be present in the new vanilla Jump King, some **new features** and **improvements** and **bug fixes**. The full list of changes are available in the [Jump King Update Changelog]() though.
 
 [tell what im doing]
 

@@ -67,13 +67,6 @@ You will find everything you need to know in the new [Jump King documentation](#
 
 ![Tool](https://sunny-madeleine-7248c5.netlify.app/images/publishing/Step4.png)
 
-
-[how does steam workshop work]
-
-[tools: convert upload]
-### How will the 
-In order to achieve
-
 ### New documentation
 {: #documentation }
 

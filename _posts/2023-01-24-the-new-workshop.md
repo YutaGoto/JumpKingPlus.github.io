@@ -16,11 +16,11 @@ banner: false
 
 ### What does this even mean?
 
-As you might or might not know, I've been working for Nexile for a good while now. If this is all new for you, I recommend you to watch the following clip.
+As you might or might not know, I've been working for Nexile for a good while now. If this is comes as a surprise for you, I recommend you to watch the following clip from the *Nexile Awards* of 2022.
 
 <div class="frame-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/tAWlGysHZhE?clip=UgkxCJz6z98xU6O-d_c3nGDNOCtTuuyiXUlU&amp;clipt=EK6vCBiFxQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
-Even though it might sound like I've been working for just couple weeks since the reveal, I've actually been working with Nexile for what could be six months at this point and by the time this blogpost goes up, the new update will be released as a beta.
+Even though it might sound like I've been working for just couple weeks since the reveal, I've actually been working with Nexile for what could be six months more or less at this point and by the time this blog post goes up, the new update will be released as a public beta.
 
 ### What's this update?
 {: #update }
@@ -31,13 +31,42 @@ As ThomasOfTawny mentioned in the clip above, this free update will be community
 
 ![lmao](/images/blog3-1.png)
 
-Yes, it is confirmed now.
+And yes, it is confirmed now.
+<br><br>
 
-**Jump King is getting a Workshop update**, but not just like a JumpKingPlus preinstalled binary where you have to rename folders and files that mess like what we used to do before, a **proper update** for Jump King. Meaning you should expect some **JumpKingPlus features** be present in the new vanilla Jump King, some **new features** and **improvements** and **bug fixes**. The full list of changes are available in the [Jump King Update Changelog]() though.
+**Jump King is getting a Workshop update**, but not just like a JumpKingPlus preinstalled binary where you have to rename folders and files that mess like what we used to do before, this is going to be a **proper update** for Jump King.<br>Meaning you should expect some **JumpKingPlus features** be present in the new vanilla Jump King, some **new features** and **improvements** and **bug fixes**. The full list of changes are available in the [Jump King Update Changelog]() though.
 
-[tell what im doing]
+Since this is a very big update for Jump King (and also my first update on the game code), both Nexile and I decided to have two different milestones:
+- The first milestone has already being achieved when this post goes up, providing a **public test-that-i-hope-is-stable-enough build to the public** that is interested in trying and testing it out for themselves; included in the milestone are all the basic functionalities of the tools (this will be convered later) that I am actively working on.
+- The second will be achieved once the game is stable enough and all the side tools will be completed.
 
-[whats this update? beta]
+I'm not promising anything but I'd probably have something like a weekly, bi-weekly or monthly build update before the final milestone. This could be really cool in order to see the progress made and see what's left to do.
+
+### The tools
+Changing focus from JumpKingPlus to Jump King means that there needs to be a frictionless transition between the two. That's where the new tools I'm working on, in collaboration with Nexile, will help you transition from the old JK+ Workshop to the Steam Workshop.
+
+#### JumpKingPlus Content Port
+
+The configuration files of the wardrobe was completely questionable and confusing at best. Same goes for certain level details, that's why I remade them to make more sense and fit better. 
+
+This tool will allow all the already existing levels, reskins and collections to be converted in something that the new Jump King can understand.
+
+You'll find both the download link and a full tutorial on how to get started with it in the link below.
+
+<a href="/porting" target="_blank">Get JumpKingPlus Content Port <ion-icon name="open"></ion-icon></a>
+
+![Tool](/images/ContentPort.png)
+
+#### Jump King Workshop Manager
+
+Once converted, let's say you want to upload it on the Steam Workshop for testing the waters or because your friend really wants to play it.
+
+This tool will allow you to publish and update your item from the Workshop.
+
+You will find everything you need to know in the new [Jump King documentation](#new-documentation) publishing page.
+
+![Tool](https://sunny-madeleine-7248c5.netlify.app/images/publishing/Step4.png)
+
 
 [how does steam workshop work]
 
@@ -56,7 +85,7 @@ The new documentation is not going to be hosted over on the JumpKingPlus site bu
 
 <a href="https://sunny-madeleine-7248c5.netlify.app" target="_blank">Check out the new documentation <ion-icon name="open"></ion-icon></a>
 
-![New documentation](/images/)
+<!-- ![New documentation]() -->
 
 ### Will the update affect the speedrunners?
 {: #speedrunning }

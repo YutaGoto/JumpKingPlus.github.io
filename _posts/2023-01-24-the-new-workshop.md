@@ -38,7 +38,7 @@ And yes, it is confirmed now.
 
 Since this is a very big update for Jump King (and also my first update on the game code), both Nexile and I decided to have two different milestones:
 - The first milestone has already being achieved when this post goes up, providing a **public test-that-i-hope-is-stable-enough build to the public** that is interested in trying and testing it out for themselves; included in the milestone are all the basic functionalities of the tools (this will be convered later) that I am actively working on.
-- The second will be achieved once the game is stable enough and all the side tools will be completed.
+- The second will be achieved once the game is stable enough and all the side tools will be completed and so exiting the beta stage (meaning the game will update for everyone).
 
 I'm not promising anything but I'd probably have something like a weekly, bi-weekly or monthly build update before the final milestone. This could be really cool in order to see the progress made and see what's left to do.
 
@@ -65,18 +65,18 @@ This tool will allow you to publish and update your item from the Workshop.
 
 You will find everything you need to know in the new [Jump King documentation](#documentation) publishing page.
 
-![Tool](https://sunny-madeleine-7248c5.netlify.app/images/publishing/Step4.png)
+![Tool](https://teamnexile.github.io/jk-workshop-docs/images/publishing/Step4.png)
 
 ### New documentation
 {: #documentation }
 
-I've gained enough feedback by you guys over on [Discord server](https://discord.gg/{{site.footer-links.discord}}) tell me and the others how the current JumpKingPlus documentation is kind of slim, misses details and can be wrong at times. Which sucks because I believe the documentation is the point where a newbie wanting to create something for Jump King stops doing so because of it's complexity.
+I've gained enough feedback by you guys over on the [Discord server](https://discord.gg/{{site.footer-links.discord}}) tell me and the others how the current JumpKingPlus documentation is kind of slim, misses details and can be wrong at times. Which sucks because I believe the documentation is at the point where a newbie wanting to create something for Jump King stops doing so because of it's complexity.
 
 That's why, in collaboration with Nexile, **the documentation is getting an overhaul**!
 
 The new documentation is not going to be hosted over on the JumpKingPlus site but somewhere rather more fitting; it's now part of Nexile's website!
 
-<a href="https://sunny-madeleine-7248c5.netlify.app" target="_blank">Check out the new documentation <ion-icon name="open"></ion-icon></a>
+<a href="https://teamnexile.github.io/jk-workshop-docs" target="_blank">Check out the new documentation <ion-icon name="open"></ion-icon></a>
 
 <!-- ![New documentation]() -->
 
@@ -87,7 +87,7 @@ Yes and no, it depends.
 
 It is possible to speedrun Jump King during this quote-on-quote beta of an update, but it's like playing Jump King on release, there aren't tools like JumpKingManager to let you train well one specific jump or a wind cycle. It's kind of awkward.
 
-That's why future interests are to **fix JumpKingManager and LiveSplits for Jump King** to work with the newest version of Jump King that way doing speedruns won't change a single bit.
+That's why future interests are to **fix JumpKingManager and LiveSplits for Jump King** to work with the newest version of Jump King, that way doing speedruns won't change a single bit.
 
 What will be an issue for the Speedrunning Moderation team are the **changes brought with Jump King relating to blocks**, such as low gravity and warp blocks. Warp blocks are following the new [v1.8.2 changes](/publicv182) and playing all levels with low gravity will be slightly slower than in JumpKingPlus, but more on that on the [Jump King Update Changelog]().
 
@@ -100,7 +100,7 @@ JumpKingPlus was born as a modified (or enhanced) version of Jump King. I can't 
 
 Meanwhile for the Workshop, it will still be **available for the following months while the Steam Workshop update for Jump King is getting worked on**, but eventually when the update will be available to the public and made stable, **the JumpKingPlus' Workshop and its content will be archived**, meaning all the obsolete old download links will be removed and replaced with their relative Steam Item links. 
 
-While it might be the end for JumpKingPlus here, it won't mean all will be lost! 🙂
+While it might be the end for JumpKingPlus here, it doesn't mean all will be lost! 🙂
 
 <br>
-Thank you for taking the time to read this post.
+Thank you for taking the time to read this post and I hope you'll like the new update!

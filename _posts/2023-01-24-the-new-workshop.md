@@ -63,7 +63,7 @@ Once converted, let's say you want to upload it on the Steam Workshop for testin
 
 This tool will allow you to publish and update your item from the Workshop.
 
-You will find everything you need to know in the new [Jump King documentation](#new-documentation) publishing page.
+You will find everything you need to know in the new [Jump King documentation](#documentation) publishing page.
 
 ![Tool](https://sunny-madeleine-7248c5.netlify.app/images/publishing/Step4.png)
 

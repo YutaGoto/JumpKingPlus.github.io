@@ -21,17 +21,6 @@ layout: default
 <div id="blurred" class="blurred" style="background-image: url({{ page.images[0] }});"></div>
 
 <script>
-    function DlPlusOne(link) {
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://api.countapi.xyz/hit/JumpKingPlus/level{{ page.levelId }}");
-        xhr.responseType = "json";
-        xhr.onload = function() {
-          if (!!this.response.value) {
-            location.href = link;
-          }
-        }
-        xhr.send();
-    }
     function checkAchievement(input) {
         localStorage.setItem(input.id, input.checked);
         if (localStorage.getItem(input.id) === "false") {
@@ -78,8 +67,7 @@ layout: default
                     {% for version in page.versions %}
                         {% if version.hidden == false %}
                             <a class="dl-button"
-                                onclick="DlPlusOne('{{ version.bitly }}')"
-                                href="javascript:void(0);"
+                                href="{{ version.bitly }}"
                                 style="margin-left: 1rem;"
                                 title="{{ version.name }}">
                                 {{ version.short }} <ion-icon name="download"></ion-icon>
@@ -89,8 +77,7 @@ layout: default
                 {% endif %}
                 {% if page.bitly %}
                     <a class="dl-button"
-                        onclick="DlPlusOne('{{ page.bitly }}')"
-                        href="javascript:void(0);"
+                        href="{{ page.bitly }}"
                         title="Download">
                         Download <ion-icon name="download"></ion-icon>
                     </a>
@@ -227,16 +214,6 @@ layout: default
                             <td>Compatibility</td>
                             <td>From <b>{{ page.version-start }}</b> to <b>{{ page.version-end }}</b></td>
                         </tr>
-                        <tr>
-                            <td>Total downloads <span class="rounded-full level-tag" style="display: inline;font-size: smaller;">using <a href="https://countapi.xyz/">CountAPI</a></span></td>
-                            <td id="downloads">Loading...</td>
-                        </tr>
-                        <script>
-                            function cb(response) {
-                                document.getElementById('downloads').innerText = response.value;
-                            }
-                        </script>
-                        <script async src="https://api.countapi.xyz/info/JumpKingPlus/level{{ page.levelId }}?callback=cb"></script>
                         <tr>
                             <td>Best time <span class="rounded-full level-tag" style="display: inline;font-size: smaller;">from <a href="https://www.speedrun.com/jump_king_custom_maps">Speedrun.com</a></span></td>
                             {% if page.speedrun %}

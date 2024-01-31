@@ -2,8 +2,18 @@
 <html>
   {% include head.html %}
   <body id="top">
+    {% if page.banner != false %}
+    <div class="disclaimer">
+      <div class="container">
+        <ion-icon name="flask"></ion-icon>
+        <p><i>*Psst..* hey!</i> In collaboration with <strong>Nexile</strong>, we are proud to present you the future of community-made content in <strong>the new Jump King update</strong>!</p>
+        <a href="/the-new-workshop">Learn more...</a>
+      </div>
+    </div>
+    {% endif %}
+
     {% if page.type == 'workshop'
-       or page.path contains "workshop"
+       or page.path contains "/workshop"
        or page.path contains "docs" %}
       {% include wsnav.html %}
     {% else %}
@@ -14,12 +24,53 @@
     <div id="main" role="main" class="wrapper-content ext">
       <div class="relative">
         <div class="side-bar">
-          <a href="{{ site.url }}{{ site.baseurl }}/tags/?tag={{ page.tags[0] }}" class="button outline" style="margin-bottom: 2rem;">
-            <ion-icon name="arrow-back"></ion-icon>Back to #{{ page.tags[0] }}
-          </a>
+          <div style="display: flex;gap:2rem;margin-bottom: 2rem;justify-content: space-between;">
+            <a href="{{ site.url }}{{ site.baseurl }}/tags/?tag={{ page.tags[0] }}" class="button outline">
+              <ion-icon name="arrow-back"></ion-icon>Back to #{{ page.tags[0] }}
+            </a>
+            <div>
+              {%- capture the_cat -%}{{page.tags | first}}{%- endcapture -%}
+              {%- assign sorted_posts = site.tags[the_cat] | sort: 'order' | reverse -%}
+
+              {%- for post in sorted_posts -%}
+                  {%- if post.url == page.url -%}
+
+                  {%- assign currIndex = forloop.index0 -%}
+                  {%- assign prevIndex = currIndex | minus: 1 -%}
+                  {%- assign nextIndex = currIndex | plus: 1 -%}
+                  {%- assign articleIndexLength = forloop.length | minus: 1 -%}
+
+                  {%- if currIndex == articleIndexLength -%}
+                      {%- assign prev_post = sorted_posts[prevIndex] -%}
+                  {%- endif -%}
+
+                  {%- if currIndex < articleIndexLength and currIndex != 0 -%}
+                      {%- assign prev_post = sorted_posts[prevIndex] -%}
+                      {%- assign next_post = sorted_posts[nextIndex] -%}
+                  {%- endif -%}
+
+                  {%- if currIndex == 0 -%}
+                      {%- assign next_post = sorted_posts[nextIndex] -%}
+                  {%- endif -%}
+
+                  {%- endif -%}
+              {%- endfor -%}
+
+              {% if prev_post != null %}
+                <a class="button" href="{{ site.url }}{{ site.baseurl }}{{ prev_post.url }}">
+                  <ion-icon name="arrow-back"></ion-icon> Previous post
+                </a>
+              {% endif %}
+              {% if next_post != null %}
+                <a class="button" href="{{ site.url }}{{ site.baseurl }}{{ next_post.url }}">
+                  <ion-icon name="arrow-forward"></ion-icon> Next post
+                </a>
+              {% endif %}
+            </div>
+          </div>
           <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
             <h3>Contents</h3>
-            {% include toc.html html=content class="nav-list" %}
+            {% include toc.html html=content sanitize=true class="nav-list" %}
           </nav>
         </div>
       </div>
@@ -33,12 +84,14 @@
       style="background:rgba(0,0,0,0);overflow-y: hidden;">
         {{ content }}
       </div>
+    {% elsif page.is_full %}
+      {{ content }}
     {% else %}
-    <div id="main" role="main" class="wrapper-content header">
-      <div class="container">
-        {{ content }}
+      <div id="main" role="main" class="wrapper-content header">
+        <div class="container">
+          {{ content }}
+        </div>
       </div>
-    </div>
     {% endif %}
 
     {% include analytics.html %}

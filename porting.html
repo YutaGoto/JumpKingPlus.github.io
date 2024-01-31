@@ -1,0 +1,161 @@
+---
+title: Content Port
+layout: default
+is_full: true
+banner: false
+---
+
+<section id="home" class="wrapper-content header porting-home">
+  <div class="container">
+      <section>
+          <div class="content">
+              <h1 class="alkhemikal">Get ready for the future of Jump King content now!</h1> <!-- Get ready for the future of Jump King -->
+              <p>With our new tool, you can convert your JumpKingPlus item into a ready-to-publish Workshop item in a matter of seconds!</p>
+              <a class="button" href="https://github.com/JumpKingPlus/ContentPort/releases/latest" target="_blank">
+                  <ion-icon style="vertical-align: baseline;" name="download"></ion-icon> Get it now
+              </a>
+              <span id="downloads">
+                <script>
+                  async function GET(url) {
+                      const response = await fetch(url);
+                      const json = await response.json();
+                      return json;
+                  }
+
+                  function ParseGithubData(json) {
+                    let dl = 0;
+                    json.forEach(release => {
+                      release.assets.forEach(asset => {
+                        dl = Number(dl) + Number(asset.download_count);
+                      });
+                    });
+                    return dl.toLocaleString(undefined);
+                  }
+      
+                  GET("https://api.github.com/repos/JumpKingPlus/ContentPort/releases")
+                      .then(success => {
+                        document.getElementById('downloads').innerText = ParseGithubData(success) + " total downloads";
+                      })
+              </script>
+              </span>
+              <p>
+
+                <a class="button outline" href="#faq">
+                  <ion-icon name="book"></ion-icon>
+                  &nbsp;Instructions
+                </a>
+              </p>
+          </div>
+          <img class="banner" src="/images/ContentPort.png" alt="Tool preview">
+      </section>
+  </div>
+</section>
+
+<section id="features" class="wrapper-content header">
+  <div class="container">
+    <h2>Why choosing Content Port?</h2>
+    <div class="grid">
+      <div>
+        <ion-icon name="timer"></ion-icon>
+        <h3>Blazing fast</h3>
+        <p>Content Port is as fast as it can get, with only a couple of clicks away from your converted item!</p>
+      </div>
+      <div>
+        <ion-icon name="people"></ion-icon>
+        <h3>User-friendly</h3>
+        <p>Designed and built with User Experience in mind. Less is more sometimes.</p>
+      </div>
+      <div>
+        <ion-icon name="exit"></ion-icon>
+        <h3>Converts anything</h3>
+        <p>Whenever you want to convert levels, reskins or collections; Content Port covers all of them!</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container" id="faq">
+    <h2>Instructions</h2>
+    <div class="flex">
+      <ul class="nav-list">
+        <li class="nav-list-item active">
+          <a href="#answer1" class="nav-list-link">How do I get started?</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#answer2" class="nav-list-link">How do I convert an item?</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#answer3" class="nav-list-link">I have an issue...</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#answer4" class="nav-list-link">I found a bug! 🐛</a>
+        </li>
+      </ul>
+      <div id="answersList" class="answer">
+        <div id="answer1">
+          <h3>Getting started</h3>
+          <p>Firstly, you will need to download Content Port from the <a href="#top"><strong>download button above</strong></a>.</p>
+          <ol>
+            <li>Open the zip file by double clicking it.</li>
+            <li>Select <strong>all</strong> files inside the zip file and drag them out.<br>Save it somewhere where you will remember where it is.</li>
+            <li>You're set!</li>
+          </ol>
+        </div>
+        <hr/>
+        <div id="answer2">
+          <h3>How to convert an item</h3>
+          <ol>
+            <li>Double click <code>JKPort.exe</code> to open it.</li>
+            <li>Once opened will see two buttons:
+              <ul>
+                <li><strong>Select files...</strong>; will prompt you a dialog for choosing multiple files, for converting <strong>only reskins and collections</strong>.</li>
+                <li><strong>Select folder...</strong>; will prompt you a dialog for choosing a folder, for everything (levels, reskins and collections).</li>
+              </ul>
+              Choose the more appropriate for your item and click it! If you have any issues, follow the prompts on screen or <a href="https://discord.gg/{{ site.footer-links.discord }}">contact us over on Discord</a>.
+            </li>
+            <li>Check if the item details are correct in the new box that just appeared.</li>
+            <li>Click <strong>Convert!</strong> and let the magic happen!</li>
+          </ol>
+        </div>
+        <hr/>
+        <div id="answer3">
+          <h3>I encountered an issue...</h3>
+          <p>
+            <strong>We're really sorry this happened, <u>but let us help you out</u>!</strong>
+          </p>
+          <ol>
+            <li>Join the official <a target="_blank" href="https://discord.gg/{{ site.footer-links.discord }}"><ion-icon name="logo-discord"></ion-icon> <strong>Jump King Discord server</strong></a>,</li>
+            <li>Navigate to the <a href="https://discord.com/channels/547420017738907657/602853569200128051"><strong>#bugs</strong> text channel</a></li>
+            <li>And tell us what happened!</li>
+          </ol>
+          <p>We'll help you out to figure out your issue!</p>
+        </div>
+        <hr/>
+        <div id="answer4">
+          <h3>Bug encountered! 🐛</h3>
+          <p>
+            Report it <a href="https://github.com/JumpKingPlus/ContentPort/issues/new">over on Github</a> or on the <a href="https://discord.com/channels/547420017738907657/602853569200128051"><strong>#bugs</strong> text channel</a>.<br>
+            If it gets solved you will get featured in our community contributors wall in the homepage!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="wrapper-content header">
+  <div class="container">
+    <h2>What are you waiting for?</h2>
+    <p>Your item is just a few clicks away from being published in the just released Steam Workshop!<br>
+      Disclaimer: The current project is <strong>still in development and it is subject to change</strong>,<br>
+      learn more about <a href="/the-new-workshop"><strong>why Content Port exists</strong></a> or join the Discord for any further questions!
+    </p>
+    <div>
+      <a target="_blank" href="https://discord.gg/{{ site.footer-links.discord }}">
+        <ion-icon name="logo-discord"></ion-icon> Join the conversation
+      </a>
+      <a target="_blank" class="button small" style="margin-left: 1rem;" href="https://github.com/JumpKingPlus/ContentPort/releases/latest">
+        <ion-icon name="download" style="vertical-align: baseline;"></ion-icon> I'll give it a shot!
+      </a>
+    </div>
+  </div>
+</section>

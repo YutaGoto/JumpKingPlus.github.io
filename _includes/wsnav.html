@@ -1,6 +1,10 @@
 <div class="wrapper-sidebar header desktop">
   <header class="sidebar">
+    {% if page.home %}
+    <a class="site-title" href="#">
+    {% else %}
     <a class="site-title" href="{{ site.baseurl }}/workshop/">
+    {% endif %}
       <img src="https://raw.githubusercontent.com/JumpKingPlus/JumpKingPlus.github.io/www/images/jkcustomapslogo.png" alt="JumpKingPlus">
       <h1 class="site-name">JumpKingPlus</h1>
     </a>

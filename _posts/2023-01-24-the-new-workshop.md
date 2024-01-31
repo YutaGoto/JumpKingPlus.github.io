@@ -2,7 +2,7 @@
 layout: blog
 title: The next full jump
 subtitle: From JumpKingPlus to Jump King
-date: 2023-01-24
+date: 2024-01-31
 Author: Phoenixx19
 tags: [blog]
 comments: false

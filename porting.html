@@ -38,6 +38,13 @@ banner: false
                       })
               </script>
               </span>
+              <p>
+
+                <a class="button outline" href="#faq">
+                  <ion-icon name="book"></ion-icon>
+                  &nbsp;Instructions
+                </a>
+              </p>
           </div>
           <img class="banner" src="/images/ContentPort.png" alt="Tool preview">
       </section>
@@ -67,24 +74,25 @@ banner: false
   </div>
   <hr>
   <div class="container" id="faq">
-    <h2>Frequently Asked Questions</h2>
+    <h2>Instructions</h2>
     <div class="flex">
       <ul class="nav-list">
         <li class="nav-list-item active">
-          <a onclick="DisplayAnswer(this, '1')" class="nav-list-link active">How do I get started?</a>
+          <a href="#answer1" class="nav-list-link">How do I get started?</a>
         </li>
         <li class="nav-list-item">
-          <a onclick="DisplayAnswer(this, '2')" class="nav-list-link">How do I convert an item?</a>
+          <a href="#answer2" class="nav-list-link">How do I convert an item?</a>
         </li>
         <li class="nav-list-item">
-          <a onclick="DisplayAnswer(this, '3')" class="nav-list-link">I have an issue...</a>
+          <a href="#answer3" class="nav-list-link">I have an issue...</a>
         </li>
         <li class="nav-list-item">
-          <a onclick="DisplayAnswer(this, '4')" class="nav-list-link">I found a bug! 🐛</a>
+          <a href="#answer4" class="nav-list-link">I found a bug! 🐛</a>
         </li>
       </ul>
       <div id="answersList" class="answer">
         <div id="answer1">
+          <h3>Getting started</h3>
           <p>Firstly, you will need to download Content Port from the <a href="#top"><strong>download button above</strong></a>.</p>
           <ol>
             <li>Open the zip file by double clicking it.</li>
@@ -92,7 +100,9 @@ banner: false
             <li>You're set!</li>
           </ol>
         </div>
-        <div id="answer2" style="display: none;">
+        <hr/>
+        <div id="answer2">
+          <h3>How to convert an item</h3>
           <ol>
             <li>Double click <code>JKPort.exe</code> to open it.</li>
             <li>Once opened will see two buttons:
@@ -100,13 +110,15 @@ banner: false
                 <li><strong>Select files...</strong>; will prompt you a dialog for choosing multiple files, for converting <strong>only reskins and collections</strong>.</li>
                 <li><strong>Select folder...</strong>; will prompt you a dialog for choosing a folder, for everything (levels, reskins and collections).</li>
               </ul>
-              Choose the more appropriate for you and click it! If you have any issues, follow the prompts on screen or <a href="https://discord.gg/{{ site.footer-links.discord }}">contact us over on Discord</a>.
+              Choose the more appropriate for your item and click it! If you have any issues, follow the prompts on screen or <a href="https://discord.gg/{{ site.footer-links.discord }}">contact us over on Discord</a>.
             </li>
             <li>Check if the item details are correct in the new box that just appeared.</li>
             <li>Click <strong>Convert!</strong> and let the magic happen!</li>
           </ol>
         </div>
-        <div id="answer3" style="display: none;">
+        <hr/>
+        <div id="answer3">
+          <h3>I encountered an issue...</h3>
           <p>
             <strong>We're really sorry this happened, <u>but let us help you out</u>!</strong>
           </p>
@@ -117,31 +129,15 @@ banner: false
           </ol>
           <p>We'll help you out to figure out your issue!</p>
         </div>
-        <div id="answer4" style="display: none;">
-          <h3>Good job catching it! Thank you for your service!</h3>
+        <hr/>
+        <div id="answer4">
+          <h3>Bug encountered! 🐛</h3>
           <p>
             Report it <a href="https://github.com/JumpKingPlus/ContentPort/issues/new">over on Github</a> or on the <a href="https://discord.com/channels/547420017738907657/602853569200128051"><strong>#bugs</strong> text channel</a>.<br>
             If it gets solved you will get featured in our community contributors wall in the homepage!
           </p>
         </div>
       </div>
-      <script>
-        function DisplayAnswer(item, number) {
-          var oldAnswer = document.querySelector(".nav-list-item.active");
-          oldAnswer.classList.remove('active');
-          oldAnswer.children[0].classList.remove('active');
-          item.classList.add('active');
-          item.parentNode.classList.add('active');
-          var newAnswer = document.getElementById('answer'+number);
-          var answers = document.getElementById('answersList');
-          [...answers.children].forEach(element => {
-            element.style.display = 'none';
-            if (element = newAnswer) {
-              element.style.display = 'block';
-            }
-          });
-        }
-      </script>
     </div>
   </div>
 </section>

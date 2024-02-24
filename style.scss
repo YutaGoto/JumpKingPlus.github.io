@@ -111,6 +111,8 @@ a {
 
 a.dl-button {
   float: right;
+  opacity: 0.33;
+  pointer-events: none;
 }
 
 a.dl-button ion-icon {
@@ -1840,8 +1842,8 @@ nav {
 .disclaimer {
   max-width: unset;
   z-index: 10;
-  background-color: $oc-blue-2;
-  border-bottom: 1px solid $oc-blue-1;
+  background-color: $oc-yellow-2;
+  border-bottom: 1px solid $oc-yellow-1;
 
   .container {
     display: flex;
@@ -1867,9 +1869,9 @@ nav {
 
   a {
     flex-shrink: 0;
-    color: $oc-blue-9;
+    color: $oc-yellow-9;
     &:hover {
-      color: $oc-blue-6;
+      color: $oc-yellow-6;
     }
   }
 }
@@ -2483,9 +2485,9 @@ article.page.level details {
   .pagination > .next a, .pagination > .prev a { background-color: rgb(33, 33, 33); border: 1px solid rgb(45, 45, 45) }
   .pagination > .next a:hover, .pagination > .next a:focus { background-color: rgba($link-color,0.25)!important;  }
   .pagination > .prev a:hover, .pagination > .prev a:focus { background-color: rgba($link-color,0.25)!important;  }
-  .disclaimer { background-color: $oc-blue-9; border-bottom-color: $oc-blue-9; }
+  .disclaimer { background-color: $oc-yellow-9; border-bottom-color: $oc-yellow-9; }
   .disclaimer ion-icon { color: white; }
-  .disclaimer a { color: $oc-blue-2; &:hover { color: $oc-blue-1; } }
+  .disclaimer a { color: $oc-yellow-2; &:hover { color: $oc-yellow-1; } }
   table { border: 1px solid rgb(50, 50, 50); color: lightgrey; }
   td, th { border: 1px solid rgb(50, 50, 50); }
   tbody, thead { tr { td { background-color: rgb(33, 33, 33); } th { background-color: rgb(25, 25, 25); } } }

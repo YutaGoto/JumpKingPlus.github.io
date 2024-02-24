@@ -89,15 +89,14 @@
           {% if level.versions %}
           {% for version in level.versions %}
           {% if version.hidden == false %}
-          <a class="dl-button"
-            href="{{ version.bitly }}" style="margin-left: 1rem;" title="{{ version.name }}">
+          <a class="dl-button" style="margin-left: 1rem;" title="{{ version.name }}">
             <ion-icon name="download"></ion-icon>
           </a>
           {% endif %}
           {% endfor %}
           {% endif %}
           {% if level.bitly %}
-          <a class="dl-button" href="{{ level.bitly }}" title="Download">
+          <a class="dl-button" title="Download">
             <ion-icon name="download"></ion-icon>
           </a>
           {% endif %}
@@ -158,15 +157,14 @@
           {% if level.versions %}
           {% for version in level.versions %}
           {% if version.hidden == false %}
-          <a class="dl-button"
-            href="{{ version.bitly }}" style="margin-left: 1rem;" title="{{ version.name }}">
+          <a class="dl-button" style="margin-left: 1rem;" title="{{ version.name }}">
             <ion-icon name="download"></ion-icon>
           </a>
           {% endif %}
           {% endfor %}
           {% endif %}
           {% if level.bitly %}
-          <a class="dl-button" href="{{ level.bitly }}" title="Download">
+          <a class="dl-button" title="Download">
             <ion-icon name="download"></ion-icon>
           </a>
           {% endif %}

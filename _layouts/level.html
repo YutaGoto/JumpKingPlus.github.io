@@ -67,7 +67,6 @@ layout: default
                     {% for version in page.versions %}
                         {% if version.hidden == false %}
                             <a class="dl-button"
-                                href="{{ version.bitly }}"
                                 style="margin-left: 1rem;"
                                 title="{{ version.name }}">
                                 {{ version.short }} <ion-icon name="download"></ion-icon>
@@ -77,7 +76,6 @@ layout: default
                 {% endif %}
                 {% if page.bitly %}
                     <a class="dl-button"
-                        href="{{ page.bitly }}"
                         title="Download">
                         Download <ion-icon name="download"></ion-icon>
                     </a>

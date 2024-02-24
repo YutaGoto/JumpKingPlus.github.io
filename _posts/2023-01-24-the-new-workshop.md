@@ -7,9 +7,8 @@ Author: Phoenixx19
 tags: [blog]
 comments: false
 toc: true
-pinned: true
+pinned: false
 hidden: false
-banner: false
 ---
 
 <!-- more -->
